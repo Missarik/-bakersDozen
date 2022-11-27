@@ -6,6 +6,12 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.active{
+    color: #592614 !important;
+    text-decoration: underline;
+    text-decoration-color: #592614;
+}
+
 .homeImageStyling {
     width: 100%;
 }
@@ -132,7 +138,7 @@ input:focus{
     height: 300px;
 }
 
-.cardSize{
+.cardSize {
     width: 50%;
     padding-left: 12px;
 }
@@ -153,8 +159,18 @@ input:focus{
     color: white;
 }
 
+.nav-link:hover{
+    text-decoration: underline;
+    color: #592614;
+}
+
 .nav-bg-white, .card-bg-white {
     background-color: white;
+}
+
+.nav-bg-white{
+    height: 75px;
+    overflow-y: hidden;
 }
 
 .offerText{
@@ -171,8 +187,8 @@ input:focus{
     overflow-y: hidden;
     text-align: center;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 800;
     font-size: 35px;
 }
 
