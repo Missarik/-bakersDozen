@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');/*Importing Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');/*Importing NotoSansJP*/
+
+.bakingPackageText{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+.bakingCardContent, .bakingCardContent:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.shopNowBaking{
+    font-weight: 500;
+    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom:30%;
+    right: 5%;
+}
+
+.shopNowBakingBig{
+    font-weight: 500;
+    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom:5%;
+    right: 68%;
+}
+
+.shopNowBakingBigRight{
+    font-weight: 500;
+    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom:5%;
+    right: 1%;
+}
+
+.shopNowBakingBigRight:hover{
+    font-weight: 500;
+    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a66038;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom:5%;
+    right: 1%;
+}
+
+.shopNowBakingBig:hover{
+    font-weight: 500;
+    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a66038;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom:5%;
+    right: 68%;
+}
+
+.shopNowBaking:hover{
+    font-weight: 500;
+    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a66038;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom:30%;
+    right: 5%;
+}
+
+.plusBaking{
+    width: 70%;
+    height: 100%;
+    overflow-y: hidden;
+    align-content: center;
+}
+
+.plusBakingBig{
+    width: 70%;
+    height: 100%;
+    overflow-y: hidden;
+    align-content: center;
+}
+
+.price{
+    color: #592614;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 800;
+}
+
+.bigProduct{
+    padding-top: 15%;
+}
+
+.bigProductDetails{
+    padding-top: 10%;
+}
+
+.desc{
+    color: #adadad;
+    font-size: 15px;
+}
