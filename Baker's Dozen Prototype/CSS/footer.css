@@ -40,7 +40,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 0rem 0 3rem 0;
 }
 
 .socials li{
@@ -62,4 +62,10 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.stick-footer{
+    position: absolute;
+    top: 180%;
+    left: 9%;
 }
