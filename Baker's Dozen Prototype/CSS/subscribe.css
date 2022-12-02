@@ -4,7 +4,7 @@
 
 .subscribeIMGText{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -17,7 +17,7 @@
 
 .subscribeIMGText2{
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -73,4 +73,10 @@ text-align: center;
     background-color: #592614;
     border-radius: 25px;
     text-align: center;
+}
+
+.colour-line {
+    height: 2000px;
+    width: 100%;
+    color: #592614;
 }

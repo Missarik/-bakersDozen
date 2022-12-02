@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');/*Importing Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');/*Importing NotoSansJP*/
+
+hr{
+    width: 75%;
+    margin: auto;
+}
+
+footer{
+    background-color: white;
+    height: auto;
+    padding-top: 1%;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    max-width: 50%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    overflow-y: hidden;
+    color: #a66038;
+    font-style: italic;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #a66038;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stick-footer{
+    position: absolute;
+    top: 190%;
+    left: 9%;
+}

@@ -1,0 +1,62 @@
+.accountCont {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.accountHeader{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.fieldsContent {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #592614;
+}
+
+.accountFields {
+    display: flex;
+    flex-direction: row;
+}
+
+.accountFields2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.accountImageStyling {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+.accountFooter {
+    position: absolute;
+    top: 180%;
+    left: 5%
+}
+
+.accountContainer{
+    flex-direction: row;
+    position: absolute;
+    overflow-x: hidden;
+    top:80%;
+
+}
+
+.profileUser{
+    padding-top: 50%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputWidth{
+    width: 100%;
+}

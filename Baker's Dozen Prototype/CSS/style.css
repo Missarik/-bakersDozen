@@ -6,6 +6,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+#middleNAV{
+    padding-left: 160px;
+}
+
 .active{
     color: #592614 !important;
     text-decoration: underline;
@@ -22,7 +26,32 @@
 }
 
 .loginForm{
-    padding-top: 165px;
+    padding-top: 90px;
+}
+
+.signupForm{
+    padding-top: 50px;
+}
+
+.signupFlex{
+    display: flex;
+    flex-direction: row;
+}
+
+.sharedInput{
+    width: 90% !important;
+}
+
+.signUpHere{
+    color: #592614;
+    text-decoration: underline;
+    text-decoration-color: #592614;
+}
+
+.signUpHere:hover{
+    color: #bc4c35;
+    text-decoration: underline;
+    text-decoration-color: #bc4c35;
 }
 
 .form-container-fluid{
@@ -35,11 +64,23 @@
     width: 100%;
     border:none;
     border-bottom: 2px solid #592614;
+} 
+
+.quantityInput{
+    width: 30%;
+    border:none;
+    border-bottom: 2px solid #592614;
+}
+
+.deliveryInput{
+    width: 75%;
+    border:none;
+    border-bottom: 2px solid #592614;
 }
 
 .formInputPadding{
     padding-top: 50px;
-}
+} 
 
 .emailFormLabel{
     position: absolute;
@@ -49,7 +90,7 @@
 }
 
 .formHeight{
-    height: 400px;
+    height: 600px;
 }
 
 .passwordFormLabel{
@@ -68,9 +109,14 @@ input:focus{
     width: 100%;
 }
 
+.signinImageStyling{
+    height: 100vh;
+    width: 100%;
+}
+
 .loginLogoStyling{
     position: relative;
-    width: 45%;
+    width: 50%;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%); 
@@ -88,6 +134,14 @@ input:focus{
     border-radius: 25px;
     position: absolute;
     top: 250px;
+    left: 35%;
+    width: 150px;
+}
+
+.signUpButton{
+    border-radius: 25px;
+    position: absolute;
+    top: px;
     left: 35%;
     width: 150px;
 }
@@ -127,8 +181,15 @@ input:focus{
     background-color: #592614;
     border-radius: 25px;
 }
+.saveChangesBtn{
+    color: white;
+    font-size: 15px;
+    background-color: #592614;
+    border-radius: 25px;
+    left: 35%;
+}
 
-.homeImageBtn:hover, .readMore:hover, .shopNow:hover{
+.homeImageBtn:hover, .readMore:hover, .shopNow:hover, .subButton:hover, .saveChangesBtn:hover{
     background-color: #bc4c35;
     color: white;
 }
@@ -229,3 +290,4 @@ input:focus{
     background-color: #592614;
     border-radius: 25px;
 }
+
