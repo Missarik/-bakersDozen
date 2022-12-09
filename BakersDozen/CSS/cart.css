@@ -1,0 +1,14 @@
+.cartAccent{
+    color: #592614;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+.deliverButton{
+    border-radius: 25px;
+    position: absolute;
+    top: 900px;
+    left: 38%;
+    width: 150px;
+}
+
