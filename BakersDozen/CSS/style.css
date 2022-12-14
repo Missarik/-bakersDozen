@@ -26,11 +26,13 @@
 }
 
 .loginForm{
-    padding-top: 90px;
+    padding-top: 300px;
+    overflow-y: hidden;
 }
 
 .signupForm{
     padding-top: 50px;
+    overflow-y: hidden;
 }
 
 .signupFlex{
@@ -62,8 +64,7 @@
 
 .formInput{
     width: 100%;
-    border:none;
-    border-bottom: 2px solid #592614;
+    border: 2px solid #592614;
 } 
 
 .quantityInput{
@@ -107,6 +108,7 @@ input:focus{
 .loginImageStyling{
     height: 100vh;
     width: 100%;
+
 }
 
 .signinImageStyling{
@@ -117,23 +119,23 @@ input:focus{
 .loginLogoStyling{
     position: relative;
     width: 50%;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
 
 .loginFormStyling{
     position: relative;
-    width: 45%;
-    top: 35%;
+    width: 75%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
 
 .loginButton{
     border-radius: 25px;
-    position: absolute;
-    top: 250px;
+    position: relative;
+    top: 0px;
     left: 35%;
     width: 150px;
 }
@@ -148,7 +150,7 @@ input:focus{
 
 .homeImageText{
     position: absolute;
-    top: 50%;
+    top: 50%;  
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -241,8 +243,8 @@ input:focus{
 }
 
 .choseUsText{
-    position: absolute;
-    top: 240%;
+    position: relative;
+    bottom: 450px;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -254,8 +256,8 @@ input:focus{
 }
 
 .choseUsText2{
-    position: absolute;
-    top: 255%;
+    position: relative;
+    bottom: 450px;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;

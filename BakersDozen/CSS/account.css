@@ -50,11 +50,9 @@
 }
 
 .profileUser{
-    padding-top: 50%;
-    width: 100%;
+    margin: auto;
+    width: 40%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .inputWidth{
