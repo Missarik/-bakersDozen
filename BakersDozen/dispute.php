@@ -1,9 +1,9 @@
 <?php
-$title = "Baker's Dzoen | Contact Us";
+$title = "Baker's Dzoen | Dispute";
     include 'Includes/header.php';
 ?>
 
-<h1 class="pb-5 bakingPackageText">WANT TO GET IN TOUCH?</h1>
+<h1 class="pb-5 bakingPackageText">HAVE YOU ENCOUNTERED ANY ISSUES?</h1>
     <div>
         <img src="../Images/contactUsImage.jpg" class="subImageStyling" alt="">
         <h2 class="subscribeIMGText">TALK TO US ABOUT ANY OF YOUR QUERIES, WERE ALWAYS THERE TO HELP.</h2>
@@ -17,7 +17,7 @@ $title = "Baker's Dzoen | Contact Us";
             <div class="col-9 mx-auto p-3">
                 <div class="card border-0 shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
-                        <h5 class="card-title subCardTitle">CONTACT US</h5>
+                        <h5 class="card-title subCardTitle">Dispute</h5>
                         <form>
                             <div>
                                 <div>
@@ -42,7 +42,6 @@ $title = "Baker's Dzoen | Contact Us";
                                     <textarea name="" id="" cols="92" rows="5" class="form-control"></textarea>
                                 </div>
                             </div>
-                            <p>Would like to settle a dispute? <span><a href="dispute.php" class="signUpHere">Lets fix it here.</a></span></p>
                             <a href="../HTML/mysterybox.html" type="submit" class="btn shopNow">Submit Message</a>
                         </form>
                     </div>

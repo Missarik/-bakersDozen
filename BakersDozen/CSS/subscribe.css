@@ -3,8 +3,8 @@
 }
 
 .subscribeIMGText{
-    position: absolute;
-    top: 45%;
+    position: relative;
+    bottom: 350px;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -16,8 +16,8 @@
 }
 
 .subscribeIMGText2{
-    position: absolute;
-    top: 55%;
+    position: relative;
+    bottom: 350px;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
