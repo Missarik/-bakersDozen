@@ -5,7 +5,7 @@ $title = "Baker's Dzoen | Baking Kit";
 
 <h1 class="pb-3 bakingPackageText">BAKING PACKAGES</h1>
     <div>
-        <input type="search" class="form-control" style="width: 30%; margin: auto; display: block; text-align: center;" id="search-item"  placeholder="Search Packages &#x1F50E;&#xFE0E;" onkeyup="search()">
+        <input type="search" class="form-control" style="width: 30%; margin: auto; display: block; text-align: center;" id="search-item"  placeholder="Search Packages &#x1F50E;&#xFE0E;" onkeyup="search();">
     </div>
 
     <div class="container p-5">
@@ -216,6 +216,7 @@ $title = "Baker's Dzoen | Baking Kit";
             </div>
         </div>
     </div>
+    
 
 <?php
     include 'Includes/footer.php';

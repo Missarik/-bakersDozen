@@ -20,6 +20,7 @@
             <p>&copy 2022 Baker's Dozen</p>
         </div>
     </footer>
+    <script src="JavaScript/script.js"></script>
 </body>
 
 </html>
