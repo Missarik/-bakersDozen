@@ -7,7 +7,7 @@
         <div class="col-6 col-lg-6">
             <img src="../Images/Baker.jpg" class="loginImageStyling" alt="">
         </div>
-        <div class="col-6 col-lg-6 loginForm">
+        <div class="col-6 col-lg-6 loginForm" style="overflow:hidden;">
             <div class="form-container-fluid loginFormStyling">
                 <h1 class="pb-5">LOGIN</h1>
                 <form action="../HTML/index.html" class="formHeight">
