@@ -3,8 +3,7 @@ $title = "Baker's Dozen";
     include 'Includes/fixedHeader.php';
 ?>
 
-<div class="">
-        <img src="../Images/homeImage2.jpg" class="homeImageStyling" alt="">
+<div class="homeIMG">
         <h2 class="homeImageText">WONDEFUL TREATS,</h2><br>
         <h2 class="homeImageText2"> MADE RIGHT AT HOME.</h2>
         <a class="homeImageBtn btn" href="bakingKit.html">Take a look at our recipes</a>
@@ -53,10 +52,9 @@ $title = "Baker's Dozen";
     </div>
 
     <h1 class="p-5 offerText">WHY CHOOSE BAKER'S DOZEN?</h1>
-    <div class="">
-        <img src="../Images/IngredientsOnTable.jpg" class="homeImageStyling" alt="">
-        <h2 class="choseUsText">WITH US ALL YOU NEED IS,<br>IN ONE SUSTAINABLE PACKAGE.</h2>
-        <h2 class="choseUsText2">THESE PACKAGES HELP GIVE YOU ALL YOU NEED TO START BAKING.<br>NO NEED TO GO SEARCHING
+    <div class="chooseBG">
+        <h2 class="chooseUsText">WITH US ALL YOU NEED IS,<br>IN ONE SUSTAINABLE PACKAGE.</h2>
+        <h2 class="chooseUsText2">THESE PACKAGES HELP GIVE YOU ALL YOU NEED TO START BAKING.<br>NO NEED TO GO SEARCHING
             FAR AND WIDE FOR THE BEST INGREDIENTS. THEY ARE ALL IN ONE PLACE.</h2>
     </div>
 

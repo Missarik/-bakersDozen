@@ -1,5 +1,5 @@
 <?php
-    $title = "Baker's Dzoen | Login";
+    $title = "Baker's Dozen | Login";
     include 'Includes/fixedHeader.php';
 ?>
 

@@ -1,11 +1,10 @@
 <?php
-$title = "Baker's Dzoen | Contact Us";
+$title = "Baker's Dozen | Contact Us";
     include 'Includes/header.php';
 ?>
 
 <h1 class="pb-5 bakingPackageText">WANT TO GET IN TOUCH?</h1>
-    <div>
-        <img src="../Images/contactUsImage.jpg" class="subImageStyling" alt="">
+    <div class="contactUsIMG">
         <h2 class="subscribeIMGText">TALK TO US ABOUT ANY OF YOUR QUERIES, WERE ALWAYS THERE TO HELP.</h2>
         <h2 class="subscribeIMGText2">YOU CAN CONTACT US BY FILLING IN THE FORM BELOW. IF YOU NEED YOU CAN ALSO ADD A
             COMPLAINT IF YOU DEEM FIT. WE WILL SETTLE OUT ANY ISSUES. WE WONT LET OUR FELLOW BAKERS DOWN.</h2>
@@ -14,7 +13,7 @@ $title = "Baker's Dzoen | Contact Us";
 
     <div class="container-fluid subCardContainer p-5 ">
         <div class="row">
-            <div class="col-9 mx-auto p-3">
+            <div class="col-lg-9 col-sm-12 mx-auto p-3">
                 <div class="card border-0 shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">CONTACT US</h5>
