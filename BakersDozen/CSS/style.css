@@ -108,20 +108,11 @@ input:focus{
 .loginImageStyling{
     height: 100vh;
     width: 100%;
-
 }
 
 .signinImageStyling{
     height: 100vh;
     width: 100%;
-}
-
-.loginLogoStyling{
-    position: relative;
-    width: 50%;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
 }
 
 .loginFormStyling{
@@ -130,6 +121,7 @@ input:focus{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+    overflow-y: hidden;
 }
 
 .loginButton{
@@ -293,3 +285,9 @@ input:focus{
     border-radius: 25px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 576px){
+    .homeImageText{
+        top:20%;
+        font-size: 27px;
+    }
+}
