@@ -1,0 +1,24 @@
+.sitemapItem{ 
+    border: 1px solid #592614;
+    border-radius: 20px;
+    width:250px;
+    height: 50px;
+    display: flex;
+    color: #592614;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sitemapItem:hover{
+    color: #ffffff;
+    text-decoration:none;
+    text-decoration-color: #bc4c35;
+    background-color: #592614;
+}
+
+.sitemapHeader{
+text-align: center;
+font-family: "Montserrat", sans-serif;
+font-weight: 100;}
