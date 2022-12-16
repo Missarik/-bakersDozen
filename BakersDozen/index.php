@@ -13,7 +13,7 @@ $title = "Baker's Dozen";
     <h1 class="p-5 offerText" id="offer">WHAT DO WE OFFER?</h1>
     <div class="sm-cards-showcase p-3">
         <div class="row">
-            <div class="col-lg-4 col-sm-4 ">
+            <div class="col-lg-4 col-sm-12 ">
                 <div class="card card-bg-white border-0">
                     <img src="../Images/mysterybox.jpg" class="card-img-top cardImageStyling" alt="Subscription Box">
                     <div class="card-body">
@@ -25,7 +25,7 @@ $title = "Baker's Dozen";
                 </div>
             </div>
 
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="card card-bg-white border-0">
                     <img src="../Images/brownie.webp" class="card-img-top cardImageStyling" alt="Baking Packages">
                     <div class="card-body">
@@ -38,7 +38,7 @@ $title = "Baker's Dozen";
                 </div>
             </div>
 
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="card card-bg-white border-0">
                     <img src="../Images/utensils.jpg" class="card-img-top cardImageStyling" alt="Baking Utensils">
                     <div class="card-body">
@@ -63,7 +63,7 @@ $title = "Baker's Dozen";
     <h1 class="pt-5 offerText">HOW DOES IT WORK?</h1>
     <div class="sm-cards-showcase p-2">
         <div class="flexBox">
-            <div class="col-lg-3  col-sm-3">
+            <div class="col-lg-3  col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/spoon.svg" class="card-img-top cardImageStyling" alt="Subscription Box">
                     <div class="card-body">
@@ -73,7 +73,7 @@ $title = "Baker's Dozen";
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-3">
+            <div class="col-lg-3 col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/computer.svg" class="card-img-top cardImageStyling" alt="Baking Packages">
                     <div class="card-body">
@@ -84,7 +84,7 @@ $title = "Baker's Dozen";
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-3">
+            <div class="col-lg-3 col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/deliver.svg" class="card-img-top cardImageStyling" alt="Baking Utensils">
                     <div class="card-body">
@@ -94,7 +94,7 @@ $title = "Baker's Dozen";
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-3">
+            <div class="col-lg-3 col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/bake.svg" class="card-img-top cardImageStyling" alt="Baking Utensils">
                     <div class="card-body">
