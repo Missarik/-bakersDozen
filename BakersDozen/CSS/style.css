@@ -285,9 +285,3 @@ input:focus{
     border-radius: 25px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 576px){
-    .homeImageText{
-        top:20%;
-        font-size: 27px;
-    }
-}
