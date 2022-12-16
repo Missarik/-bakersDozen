@@ -148,6 +148,12 @@ input:focus{
     width: 150px;
 }
 
+.homeIMG{
+    background-image: url("../Images/homeImage2.jpg");
+    height: 1000px;
+    background-size: cover;
+}
+
 .homeImageText{
     position: absolute;
     top: 50%;  
@@ -242,9 +248,16 @@ input:focus{
     font-weight: 100;
 }
 
-.choseUsText{
+.chooseBG{
+    background-image: url("../Images/IngredientsOnTable.jpg");
+    height: 600px;
+    background-size: cover;
+}
+
+.chooseUsText{
     position: relative;
-    bottom: 450px;
+    top: 15rem;
+    bottom: auto;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -255,9 +268,9 @@ input:focus{
     font-size: 35px;
 }
 
-.choseUsText2{
+.chooseUsText2{
     position: relative;
-    bottom: 450px;
+    top: 15rem;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -293,3 +306,26 @@ input:focus{
     border-radius: 25px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 576px){
+    .homeIMG, .chooseBG{
+        background-size:cover;
+        background-position: center;
+    }
+    .homeImageText{
+        font-size: 45px;
+        padding-bottom: 15%;
+    }
+    .homeImageText2{
+        font-size: 45px;
+    }
+    .chooseUsText{
+        font-size: 25px;
+        padding-bottom: 2%;
+    }
+    .chooseUsText2{
+        font-size: 15px;
+    }
+    .flexBox{
+        flex-direction: column;
+    }
+}

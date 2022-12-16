@@ -1,5 +1,5 @@
 <?php
-$title = "Baker's Dzoen | Dispute";
+$title = "Baker's Dozen | Dispute";
     include 'Includes/header.php';
 ?>
 

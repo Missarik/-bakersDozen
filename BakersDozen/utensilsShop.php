@@ -1,16 +1,16 @@
 <?php
-    $title = "Baker's Dzoen | Utensils Shop";
+    $title = "Baker's Dozen | Utensils Shop";
     include 'Includes/header.php';
 ?>
 
 <h1 class="pb-3 bakingPackageText">UTENSILS SHOP</h1>
     <div>
-        <input type="search" class="form-control" style="width: 30%; margin: auto; display: block; text-align: center;" id="search-item"  placeholder="Search Utensils &#x1F50E;&#xFE0E;" onkeyup="search()">
+        <input type="search" class="form-control" style="width: 35%; margin: auto; display: block; text-align: center;" id="search-item"  placeholder="Search Utensils &#x1F50E;&#xFE0E;" onkeyup="search()">
     </div>
 
     <div class="container p-5">
         <div class="row">
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -23,7 +23,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -36,7 +36,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -64,7 +64,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -77,7 +77,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -93,7 +93,7 @@
         </div>
 
         <div class="row">
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -106,7 +106,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">
@@ -119,7 +119,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm p-3 item">
+            <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="#" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/Whisk.jpg">

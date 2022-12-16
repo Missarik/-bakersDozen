@@ -4,7 +4,7 @@
 
 .subscribeIMGText{
     position: relative;
-    bottom: 350px;
+    top: 15rem;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -17,7 +17,7 @@
 
 .subscribeIMGText2{
     position: relative;
-    bottom: 350px;
+    top: 15rem;
     left: 50%;
     transform: translate(-50%, -50%); 
     overflow-y: hidden;
@@ -75,8 +75,28 @@ text-align: center;
     text-align: center;
 }
 
+.subIMG{
+    background-image: url("../Images/subscribePage.jpg");
+    background-size: cover;
+    height: 600px;
+}
+
 .colour-line {
     height: 2000px;
     width: 100%;
     color: #592614;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px){
+    .subIMG{
+        background-size:cover;
+        background-position: center;
+    }
+    .subscribeIMGText{
+        font-size: 25px;
+        padding-bottom: 2%;
+    }
+    .subscribeIMGText2{
+        font-size: 15px;
+    }
 }

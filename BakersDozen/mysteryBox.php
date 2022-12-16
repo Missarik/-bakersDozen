@@ -1,12 +1,11 @@
 <?php
-    $title = "Baker's Dzoen | Mystery Box";
+    $title = "Baker's Dozen | Mystery Box";
     include 'Includes/header.php';
 ?>
 
 <h1 class="pb-5 subText">WHY SUBSCRIBE TO THE MYSTERY BOX?</h1>
 
-    <div>
-        <img src="../Images/subscribePage.jpg" class="subImageStyling" alt="">
+    <div class="subIMG">
         <h2 class="subscribeIMGText">ENROLL YOURSELF INTO THE WONDER COMMUNITY OF BAKING</h2>
         <h2 class="subscribeIMGText2">GET THESE BOXES AND SURPRISE YOURSELF WITH WHATEVER RECIPE YOU MAY FIND. BETTER
             YOUR SKILLS AND BECOME THE BEST BAKER YOU CAN.</h2>
@@ -17,7 +16,7 @@
 
     <div class="container subCardContainer p-5">
         <div class="row">
-            <div class="col-sm p-3">
+            <div class="col-lg-4 col-sm-12 p-3">
                 <div class="card border-0 shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">STARTER</h5>
@@ -30,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm p-3">
+            <div class="col-lg-4 col-sm-12 p-3">
                 <div class="card border-0 shadow p-3 mb-5 bg-white rounded ">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">INTERMEDIATE</h5>
@@ -43,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm p-3">
+            <div class="col-lg-4 col-sm-12 p-3">
                 <div class="card border-0 shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">ADVANCED</h5>
@@ -63,7 +62,7 @@
 
     <div class="sm-cards-showcase pt-2 pb-5">
         <div class="flexBox">
-            <div class="col-lg-3  col-sm-3">
+            <div class="col-lg-3  col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Recipe.svg" class="card-img-top cardImageStyling" alt="Subscription Box">
                     <div class="card-body">
@@ -72,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-3">
+            <div class="col-lg-3 col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Ingredients.svg" class="card-img-top cardImageStyling" alt="Baking Packages">
                     <div class="card-body">
@@ -81,20 +80,20 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-3">
+            <div class="col-lg-3 col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Freebie.svg" class="card-img-top cardImageStyling" alt="Baking Utensils">
                     <div class="card-body">
-                        <h5 class="card-title text-dark">FREEBIE</h5>
+                        <h5 class="card-title text-dark">FREEBIES</h5>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-3">
+            <div class="col-lg-3 col-sm-12">
                 <div class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Sticker.svg" class="card-img-top cardImageStyling" alt="Baking Utensils">
                     <div class="card-body">
-                        <h5 class="card-title text-dark">STICKER</h5>
+                        <h5 class="card-title text-dark">STICKERS</h5>
                     </div>
                 </div>
             </div>
