@@ -13,7 +13,7 @@ $title = "Baker's Dozen | Contact Us";
 
     <div class="container-fluid subCardContainer p-5 ">
         <div class="row">
-            <div class="col-lg-9 col-sm-12 mx-auto p-3">
+            <div class="col-lg-9 col-sm-11 mx-auto p-3">
                 <div class="card border-0 shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">CONTACT US</h5>
