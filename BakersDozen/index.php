@@ -32,7 +32,7 @@ $title = "Baker's Dozen";
                         <p class="card-text text-dark">Bake the confectionary of your choice, whilst using the freshest
                             ingredients.</p>
 
-                        <a href="mysteryBox.php" class="btn shopNow"> Shop Now</a>
+                        <a href="bakingKit.php" class="btn shopNow"> Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ $title = "Baker's Dozen";
                         <h5 class="card-title text-dark">Utensils Shop</h5>
                         <p class="card-text text-dark">Fournish your home kitchen with the most modern equipment to bake
                             your treats.</p>
-                        <a href="mysteryBox.php" class="btn shopNow">Shop Now</a>
+                        <a href="utensilsShop.php" class="btn shopNow">Shop Now</a>
                     </div>
                 </div>
             </div>

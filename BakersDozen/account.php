@@ -8,10 +8,10 @@
         <img src="../Images/accountHeader.jpg" class="subImageStyling" alt="">
     </div>
     <div class="pt-5 container-fluid flexBox justify-content-center p-5">
-        <div class="col-5 p-5 card">
+        <div class="col-lg-5 col-sm-11 p-5 card">
             <img src="../Images/person.svg" class="profileUser" alt="">
         </div>
-        <div class="col-5 p-5 card accountDetails-card">
+        <div class="col-lg-5 col-sm-11 p-5 card accountDetails-card">
             <div class="flexBox nameSurname">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Name</label>
