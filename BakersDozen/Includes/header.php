@@ -31,7 +31,7 @@
 <body>
     <nav class="navbar navbar-expand-lg opacity-100 shadow p-3 mb-5 bg-white rounded">
         <div class="container-fluid">
-            <img src="../Images/Logo.png" alt="Logo" width="150" class="d-inline-block align-text-top">
+            <a href="index.php"><img src="../Images/Logo.png" alt="Logo" width="150" class="d-inline-block align-text-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
