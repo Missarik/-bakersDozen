@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');/*Importing Montserrat*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');/*Importing NotoSansJP*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+/*Importing Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+/*Importing NotoSansJP*/
 
 * {
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
 }
 
-#middleNAV{
+#middleNAV {
     padding-left: 160px;
 }
 
-.active{
+.active {
     color: #592614 !important;
     text-decoration: underline;
     text-decoration-color: #592614;
@@ -20,111 +22,111 @@
     width: 100%;
 }
 
-.container-fluid{
+.container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-.loginForm{
+.loginForm {
     padding-top: 300px;
     overflow-y: hidden;
 }
 
-.signupForm{
+.signupForm {
     padding-top: 50px;
     overflow-y: hidden;
 }
 
-.signupFlex{
+.signupFlex {
     display: flex;
     flex-direction: row;
 }
 
-.sharedInput{
+.sharedInput {
     width: 90% !important;
 }
 
-.signUpHere{
+.signUpHere {
     color: #592614;
     text-decoration: underline;
     text-decoration-color: #592614;
 }
 
-.signUpHere:hover{
+.signUpHere:hover {
     color: #bc4c35;
     text-decoration: underline;
     text-decoration-color: #bc4c35;
 }
 
-.form-container-fluid{
+.form-container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
     width: 50%;
 }
 
-.formInput{
+.formInput {
     width: 100%;
     border: 2px solid #592614;
-} 
+}
 
-.quantityInput{
+.quantityInput {
     width: 30%;
-    border:none;
+    border: none;
     border-bottom: 2px solid #592614;
 }
 
-.deliveryInput{
+.deliveryInput {
     width: 75%;
-    border:none;
+    border: none;
     border-bottom: 2px solid #592614;
 }
 
-.formInputPadding{
+.formInputPadding {
     padding-top: 50px;
-} 
+}
 
-.emailFormLabel{
+.emailFormLabel {
     position: absolute;
     left: 5px;
     color: #adadad;
     pointer-events: none;
 }
 
-.formHeight{
+.formHeight {
     height: 600px;
 }
 
-.passwordFormLabel{
+.passwordFormLabel {
     position: absolute;
     left: 5px;
     color: #adadad;
     pointer-events: none;
 }
 
-input:focus{
-    outline:none;
+input:focus {
+    outline: none;
 }
 
-.loginImageStyling{
+.loginImageStyling {
     height: 100vh;
     width: 100%;
 }
 
-.signinImageStyling{
+.signinImageStyling {
     height: 100vh;
     width: 100%;
 }
 
-.loginFormStyling{
+.loginFormStyling {
     position: relative;
     width: 75%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     overflow-y: hidden;
 }
 
-.loginButton{
+.loginButton {
     border-radius: 25px;
     position: relative;
     top: 0px;
@@ -132,7 +134,7 @@ input:focus{
     width: 150px;
 }
 
-.signUpButton{
+.signUpButton {
     border-radius: 25px;
     position: absolute;
     top: px;
@@ -140,17 +142,17 @@ input:focus{
     width: 150px;
 }
 
-.homeIMG{
+.homeIMG {
     background-image: url("../Images/homeImage2.jpg");
     height: 1000px;
     background-size: cover;
 }
 
-.homeImageText{
+.homeImageText {
     position: absolute;
-    top: 50%;  
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     overflow-y: hidden;
     text-align: center;
     color: white;
@@ -158,11 +160,11 @@ input:focus{
     font-size: 60px;
 }
 
-.homeImageText2{
+.homeImageText2 {
     position: absolute;
     top: 58%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     overflow-y: hidden;
     text-align: center;
     color: white;
@@ -171,17 +173,18 @@ input:focus{
     font-size: 60px;
 }
 
-.homeImageBtn{
+.homeImageBtn {
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
     background-color: #592614;
     border-radius: 25px;
 }
-.saveChangesBtn{
+
+.saveChangesBtn {
     color: white;
     font-size: 15px;
     background-color: #592614;
@@ -189,7 +192,11 @@ input:focus{
     left: 35%;
 }
 
-.homeImageBtn:hover, .readMore:hover, .shopNow:hover, .subButton:hover, .saveChangesBtn:hover{
+.homeImageBtn:hover,
+.readMore:hover,
+.shopNow:hover,
+.subButton:hover,
+.saveChangesBtn:hover {
     background-color: #bc4c35;
     color: white;
 }
@@ -204,49 +211,50 @@ input:focus{
     padding-left: 12px;
 }
 
-.btn-BC4C35{
-    border:2px solid #592614;
+.btn-BC4C35 {
+    border: 2px solid #592614;
     color: #592614;
 }
 
-.nav-login-btn{
+.nav-login-btn {
     border-radius: 25px;
     width: 100px;
 }
 
-.btn-BC4C35:hover{
-    border:2px solid #592614;
+.btn-BC4C35:hover {
+    border: 2px solid #592614;
     background-color: #bc4c35;
     color: white;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     text-decoration: underline;
     color: #592614;
 }
 
-.nav-bg-white, .card-bg-white {
+.nav-bg-white,
+.card-bg-white {
     background-color: white;
 }
 
-.offerText{
+.offerText {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
 }
 
-.chooseBG{
+.chooseBG {
     background-image: url("../Images/IngredientsOnTable.jpg");
     height: 600px;
     background-size: cover;
 }
 
-.chooseUsText{
+.chooseUsText {
     position: relative;
     top: 15rem;
     bottom: auto;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     overflow-y: hidden;
     text-align: center;
     color: white;
@@ -255,11 +263,11 @@ input:focus{
     font-size: 35px;
 }
 
-.chooseUsText2{
+.chooseUsText2 {
     position: relative;
     top: 15rem;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     overflow-y: hidden;
     text-align: center;
     color: white;
@@ -268,24 +276,24 @@ input:focus{
     font-size: 20PX;
 }
 
-.flexBox{
+.flexBox {
     display: flex;
     flex-direction: row;
     justify-items: center;
 }
 
-.readMore{
+.readMore {
     position: absolute;
     top: 380%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
     background-color: #592614;
     border-radius: 25px;
 }
 
-.shopNow{
+.shopNow {
     color: white;
     font-weight: 500;
     font-size: 16px;
@@ -293,26 +301,33 @@ input:focus{
     border-radius: 25px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 576px){
-    .homeIMG, .chooseBG{
-        background-size:cover;
+@media screen and (min-width: 0px) and (max-width: 576px) {
+
+    .homeIMG,
+    .chooseBG {
+        background-size: cover;
         background-position: center;
     }
-    .homeImageText{
+
+    .homeImageText {
         font-size: 45px;
         padding-bottom: 15%;
     }
-    .homeImageText2{
+
+    .homeImageText2 {
         font-size: 45px;
     }
-    .chooseUsText{
+
+    .chooseUsText {
         font-size: 25px;
         padding-bottom: 2%;
     }
-    .chooseUsText2{
+
+    .chooseUsText2 {
         font-size: 16px;
     }
-    .flexBox{
+
+    .flexBox {
         flex-direction: column;
     }
 }

@@ -57,10 +57,14 @@
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="account.php"><i class="fa-solid fa-user fa-2x"></i></a>
+                            <a class="nav-link" href="account.php">
+                                <ion-icon size="large" name="person"></ion-icon>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shoppingCart.php"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+                            <a class="nav-link" href="shoppingCart.php">
+                                <ion-icon size="large" name="cart"></ion-icon>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-BC4C35 nav-login-btn" href="login.php">Login</a>
