@@ -229,11 +229,6 @@ input:focus{
     background-color: white;
 }
 
-.nav-bg-white{
-    height: 75px;
-    overflow-y: hidden;
-}
-
 .offerText{
     text-align: center;
     font-family: "Montserrat", sans-serif;
