@@ -106,6 +106,7 @@ $title = "Baker's Dozen";
 
     <h1 class="pt-5 offerText"></h1>
 
+
 <?php
     include 'Includes/footer.php';
 ?>

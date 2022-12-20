@@ -10,7 +10,6 @@
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="../Images/cupcake.jpg" class="img-fluid rounded-start " alt="..."><br><br>
-                        <input type="number" min="1" class="quantityInput" placeholder="QTY">
                         <a href="#" class="btn shopNow">ADD TO CART</a>
 
                     </div>

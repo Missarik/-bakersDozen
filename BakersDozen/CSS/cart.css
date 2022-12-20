@@ -12,3 +12,14 @@
     width: 150px;
 }
 
+.cardBody{
+    position: relative;
+    top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardBody > .card-title{
+    font-size: 20px;
+}
