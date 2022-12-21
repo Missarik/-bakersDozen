@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="../CSS/contactUs.css">
     <link rel="stylesheet" href="../CSS/subscribe.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+
 
 
 </head>
