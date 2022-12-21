@@ -17,7 +17,7 @@
     <div class="container subCardContainer p-5">
         <div class="row">
             <div class="col-lg-4 col-sm-12 p-3">
-                <div class="card border-0 shadow p-3 mb-5 bg-white rounded">
+                <div id="card" class="card border-0 shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">STARTER</h5>
                         <p class="card-text subPrice">€25</p>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 p-3">
-                <div class="card border-0 shadow p-3 mb-5 bg-white rounded ">
+                <div id="card" class="card border-0 shadow p-3 mb-5 bg-white rounded ">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">INTERMEDIATE</h5>
                         <p class="card-text subPrice">€35</p>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 p-3">
-                <div class="card border-0 shadow p-3 mb-5 bg-white rounded">
+                <div id="card" class="card border-0 shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title subCardTitle">ADVANCED</h5>
                         <p class="card-text subPrice">€45</p>
@@ -63,7 +63,7 @@
     <div class="sm-cards-showcase pt-2 pb-5">
         <div class="flexBox">
             <div class="col-lg-3  col-sm-12">
-                <div class="card cardSize text-center mx-auto card-bg-white border-0">
+                <div id="card" class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Recipe.svg" class="card-img-top cardImageStyling" alt="Subscription Box">
                     <div class="card-body">
                         <h5 class="card-title text-dark">RECIPE</h5>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="col-lg-3 col-sm-12">
-                <div class="card cardSize text-center mx-auto card-bg-white border-0">
+                <div id="card" class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Ingredients.svg" class="card-img-top cardImageStyling" alt="Baking Packages">
                     <div class="card-body">
                         <h5 class="card-title text-dark">INGREDIENTS</h5>
@@ -81,7 +81,7 @@
             </div>
 
             <div class="col-lg-3 col-sm-12">
-                <div class="card cardSize text-center mx-auto card-bg-white border-0">
+                <div id="card" class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Freebie.svg" class="card-img-top cardImageStyling" alt="Baking Utensils">
                     <div class="card-body">
                         <h5 class="card-title text-dark">FREEBIES</h5>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="col-lg-3 col-sm-12">
-                <div class="card cardSize text-center mx-auto card-bg-white border-0">
+                <div id="card" class="card cardSize text-center mx-auto card-bg-white border-0">
                     <img src="../Images/Sticker.svg" class="card-img-top cardImageStyling" alt="Baking Utensils">
                     <div class="card-body">
                         <h5 class="card-title text-dark">STICKERS</h5>

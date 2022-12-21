@@ -19,3 +19,24 @@ const search = () => {
     }
 }
 
+const toggle = document.getElementById('toggleDark');
+const body  = document.querySelector('body');
+const card  = document.getElementById('card');
+const navigation  = document.querySelector('nav');
+
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon-fill');
+
+    if(!this.classList.toggle('bi-brightness-high-fall')){
+        body.style.backgroundColor = "white";
+        
+    }
+    else{
+        body.style.backgroundColor = "#29262c";
+        body.style.color = "white";
+        card.classList.replace("bg-white","bg-dark");
+        navigation.classList.replace("bg-white","bg-dark");
+    }
+})
+
