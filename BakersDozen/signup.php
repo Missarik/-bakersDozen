@@ -4,7 +4,7 @@
 ?>
 
 <div class="container-fluid flexBox">
-        <div class="col-6 col-lg-6 signupForm">
+        <div class="col-6 col-lg-6 col-sm-12 signupForm">
             <div class="form-container-fluid loginFormStyling">
             <h1 class="pb-4">Sign Up</h1>
                 <form action="Includes/signup-inc.php" class="formHeight" method="POST">

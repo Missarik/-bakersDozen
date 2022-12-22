@@ -51,26 +51,6 @@ $title = "Baker's Dozen | Baking Kit";
             </div>
         </div>
 
-
-        <div class="card mb-3 item border-0" style="max-width: 100%;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="../Images/Macarons.jpg" class="img-fluid rounded-start " alt="...">
-                    <a href="../HTML/productDetails.html"  class="btn shopNowBakingBig"><img src="../Images/plus.svg" class="plusBakingBig"
-                            alt=""></a>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body bigProduct">
-                        <h5 class="card-title">Muffin 4</h5>
-                        <p class="card-text price">€25</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti est ab
-                            maxime velit ipsum alias molestiae dolore laboriosam asperiores architecto neque
-                            corporis, mollitia nostrum. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="row">
             <div class="col-lg-4 col-sm-12 p-3 item">
                 <a href="productDetails.html" class="bakingCardContent">
@@ -152,25 +132,6 @@ $title = "Baker's Dozen | Baking Kit";
                         </div>
                     </div>
                 </a>
-            </div>
-        </div>
-        
-        <div class="card mb-3 border-0 item" style="max-width: 100%;">
-            <div class="row g-0">
-                <div class="col-md-8">
-                    <div class="card-body bigProduct">
-                        <h5 class="card-title">Cookie 7</h5>
-                        <p class="card-text price">€25</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti est ab
-                            maxime velit ipsum alias molestiae dolore laboriosam asperiores architecto neque
-                            corporis, mollitia nostrum. </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="../Images/Macarons.jpg" class="img-fluid rounded-start " alt="...">
-                    <a href="../HTML/productDetails.html"  class="btn shopNowBakingBigRight"><img src="../Images/plus.svg" class="plusBakingBig" alt="">
-                    </a>
-                </div>
             </div>
         </div>
 
