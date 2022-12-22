@@ -2,6 +2,7 @@
 /*Importing Montserrat*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 /*Importing NotoSansJP*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
 * {
     overflow-x: hidden;
@@ -329,5 +330,32 @@ input:focus {
 
     .flexBox {
         flex-direction: column;
+    }
+
+    .loginImageStyling{
+        display: none;
+    }
+
+    .loginForm{
+        overflow-y: hidden;
+    }
+
+    .loginFormStyling{
+        position: relative;
+        top: 27rem;
+        overflow: hidden;
+    }
+
+    .signinImageStyling{
+        display: none;
+    }
+
+    .signupForm{
+        height: 100vh;
+    }
+
+    .signUpButton{
+        position: relative;
+        left: 7.5rem;
     }
 }

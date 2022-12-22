@@ -6,7 +6,7 @@ $title = "Baker's Dozen";
 <div class="homeIMG">
         <h2 class="homeImageText">WONDEFUL TREATS,</h2><br>
         <h2 class="homeImageText2"> MADE RIGHT AT HOME.</h2>
-        <a class="homeImageBtn btn" href="bakingKit.html">Take a look at our recipes</a>
+        <a class="homeImageBtn btn" href="bakingKit.php">Take a look at our recipes</a>
     </div>
 
     <h1 class="p-5 offerText" id="offer">WHAT DO WE OFFER?</h1>

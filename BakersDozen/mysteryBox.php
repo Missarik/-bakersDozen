@@ -25,7 +25,7 @@
                         <p class="card-text subCardContent">2 different recipes</p>
                         <p class="card-text p-3 subCardContent">Easy difficulty</p>
                         <p class="card-text subCardContent">Serves up to 3 people</p>
-                        <a href="shoppingCart.html" class="btn subButton">Subscribe</a>
+                        <a href="shoppingCart.php" class="btn subButton">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                         <p class="card-text subCardContent">3 different recipes</p>
                         <p class="card-text p-3 subCardContent">Moderate difficulty</p>
                         <p class="card-text subCardContent">Serves up to 5 people</p>
-                        <a href="shoppingCart.html" class="btn subButton">Subscribe</a>
+                        <a href="shoppingCart.php" class="btn subButton">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                         <p class="card-text subCardContent">4 different recipes</p>
                         <p class="card-text p-3 subCardContent">Hard difficulty</p>
                         <p class="card-text subCardContent">Serves up to 10 people</p>
-                        <a href="shoppingCart.html" class="btn subButton">Subscribe</a>
+                        <a href="shoppingCart.php" class="btn subButton">Subscribe</a>
                     </div>
                 </div>
             </div>
