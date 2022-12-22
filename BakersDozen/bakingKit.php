@@ -1,6 +1,8 @@
 <?php
-$title = "Baker's Dzoen | Baking Kit";
+$title = "Baker's Dozen | Baking Kit";
     include 'Includes/header.php';
+    include 'Includes/dbh-inc.php';
+    include 'Includes/functions-inc.php';
 ?>
 
 <h1 class="pb-3 bakingPackageText">BAKING PACKAGES</h1>
@@ -8,16 +10,20 @@ $title = "Baker's Dzoen | Baking Kit";
         <input type="search" class="form-control" style="width: 30%; margin: auto; display: block; text-align: center;" id="search-item"  placeholder="Search Packages &#x1F50E;&#xFE0E;" onkeyup="search();">
     </div>
 
+    <?php
+        $data = loadUsers($conn);
+    ?>
+
     <div class="container p-5">
         <div class="row">
             <div class="col-sm p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
                                 alt=""></a>
                         <div class="card-body">
-                            <h5 class="card-title">Muffin 1</h5>
+                            <h5 class="card-title"><?php echo $data['productName'];?></h5>
                             <p class="card-text price">€25</p>
                         </div>
                     </div>
