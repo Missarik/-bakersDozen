@@ -46,3 +46,22 @@
     justify-content: center;
     height: 100px;
 }
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper span{
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper .plus{
+    cursor: pointer;
+}
+
+.wrapper .minus{
+    cursor: pointer;
+}
