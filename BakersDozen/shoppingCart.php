@@ -44,7 +44,7 @@ include 'Includes/header.php';
                     <div class="orderSummary">
                         <p class="p-3"><span class="productAmmount">1</span> PRODUCT</p>
                         <hr style="width: 90%;">
-                        <p class="p-3">PRODUCT PRICE: <span class="productPrice">€25</span></p>
+                        <p class="p-3">PRODUCT PRICE: €<span class="productPrice">25</span></p>
                         <hr style="width: 90%;">
                         <p class="p-3">DELIVERY FEE: FREE</p>
                         <hr style="width: 90%;">
