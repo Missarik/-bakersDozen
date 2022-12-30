@@ -65,3 +65,7 @@
 .wrapper .minus{
     cursor: pointer;
 }
+
+.selectHeight{
+    height: 100px;
+}

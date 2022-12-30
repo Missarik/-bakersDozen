@@ -19,11 +19,12 @@ const search = () => {
     }
 }
 
+
 const plus = document.querySelector(".plus"),
     minus = document.querySelector(".minus"),
     num = document.querySelector(".num");
 productAmmount = document.querySelector(".productAmmount"),
-    productPrice = parseInt(document.querySelector(".productPrice")),
+    productPrice = document.querySelector(".productPrice"),
     price = document.querySelector(".totalPrice");
 
 let a = 1;
@@ -33,7 +34,7 @@ plus.addEventListener("click", function () {
     productAmmount.innerText = a;
     a = (a < 10) ? "0" + a : a;
     num.innerText = a;
-    price.innerText = a * parseInt(productPrice);
+    price.innerHTML = a * productPrice.innerHTML;
 });
 
 minus.addEventListener("click", function () {
@@ -42,7 +43,18 @@ minus.addEventListener("click", function () {
         productAmmount.innerText = a;
         a = (a < 10) ? "0" + a : a;
         num.innerText = a;
-        price.innerHTML = a * productPrice;
+        price.innerHTML = a * productPrice.innerHTML;
     }
 });
+
+const deleteItem = document.querySelector(".removeCartItem"),
+    card = document.querySelector(".cartItemCard");
+
+deleteItem.addEventListener("click", function(){
+    card.style.display = "none";
+    price.innerText = 0;
+    productAmmount.innerText = 0;
+    productPrice.innerText = 0;
+});
+
 
