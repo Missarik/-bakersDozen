@@ -212,6 +212,11 @@ input:focus {
     padding-left: 12px;
 }
 
+.countries:hover{
+    width: 100% !important;
+    border: 2px solid #592614 !important;
+}
+
 .btn-BC4C35 {
     border: 2px solid #592614;
     color: #592614;

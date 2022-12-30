@@ -6,8 +6,8 @@ include 'Includes/header.php';
 <h1 class="pb-3 pl-3 bakingPackageText">MY BASKET</h1>
 <div class="container-fluid mx-auto  p-5">
     <div class="row flexbox justify-content-center align-content-center">
-        <div class="col-lg-6 p-3">
-            <div class="card mb-3 border-0" style="max-width: 100%;">
+        <div class="col-lg-6 p-1 ">
+            <div class="card mb-3 border-0 cartItemCard" style="max-width: 100%;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="../Images/cupcake.jpg" class="img-fluid rounded-start " alt="..."><br><br>
@@ -19,6 +19,7 @@ include 'Includes/header.php';
                                 <p class="desc">Servings |<b> 4 people</b></p>
                                 <p class="desc">Preparation Time |<b> 15 mins</b></p>
                                 <p class="desc">Cook Time |<b> 20 mins</b></p>
+                                <button class="btn btn-BC4C35 removeCartItem"><i class="bi bi-trash-fill"></i></button>
                         </div>
                     </div>
                     <div class="col-md-2 pt-4 wrapper">
@@ -27,13 +28,14 @@ include 'Includes/header.php';
                         <span class="plus"><i class="bi bi-plus"></i></span>
                     </div>
                 </div>
+                
             </div>
         </div>
-        <div class="col-lg-4 p-3 item">
+        <div class="col-lg-4 p-1 item">
             <div id="cartCard" class="card border-0">
                 <div class="card-body">
                     <div class="chkBTN p-3">
-                        <a id="checkoutLink" href="">
+                        <a id="checkoutLink" href="checkout.php">
                             <h5 class="card-title">
                                 <h3 class="chkBTNText">CHECKOUT <i class="bi bi-arrow-right"></i></h3>
                             </h5>
@@ -44,11 +46,11 @@ include 'Includes/header.php';
                     <div class="orderSummary">
                         <p class="p-3"><span class="productAmmount">1</span> PRODUCT</p>
                         <hr style="width: 90%;">
-                        <p class="p-3">PRODUCT PRICE: <span class="productPrice">€25</span></p>
+                        <p class="p-3">PRODUCT PRICE: €<span class="productPrice">25</span></p>
                         <hr style="width: 90%;">
                         <p class="p-3">DELIVERY FEE: FREE</p>
                         <hr style="width: 90%;">
-                        <p class="p-3"><b>TOTAL: <span class="totalPrice">€25</span></b></p>
+                        <p class="p-3"><b>TOTAL: €<span class="totalPrice">25</span></b></p>
                     </div>
                 </div>
             </div>
