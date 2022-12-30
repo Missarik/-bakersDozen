@@ -24,16 +24,8 @@ include 'Includes/header.php';
                 <div class="mb-3 pb-4" class="formInputPadding">
                     <input type="text" class="formInput form-control sharedInput" id="exampleInputEmail1" name="city" required placeholder="City">
                 </div>
-                <div class="dropdown mb-3 pb-4">
-                    <button class="btn formInput form-control countries sharedInput dropdown-toggle" type="button" data-bs-toggle="dropdown" style="text-align: left;" aria-expanded="false">
-                        Countries
-                    </button>
-                    <ul class="dropdown-menu">
-                    </ul>
-                </div>
-                <select class="selectpicker countrypicker" data-live-search="true" data-flag="true"></select>
                 <div class="mb-3 pb-4" class="formInputPadding">
-                    <input type="text" class="formInput form-control sharedInput" id="exampleInputEmail1" name="phone"  placeholder="Phone (Optional)">
+                    <input type="text" class="formInput form-control sharedInput" id="exampleInputEmail1" name="phone" placeholder="Phone (Optional)">
                 </div>
                 <button type="submit" name="submit" class="btn btn-BC4C35 signUpButton" id="submit">Sign Up</button>
             </form>
