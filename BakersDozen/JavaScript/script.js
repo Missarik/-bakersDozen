@@ -5,17 +5,56 @@ const search = () => {
     const name = document.getElementsByTagName("h5");
 
 
-    for(var i=0; i<name.length; i++){
+    for (var i = 0; i < name.length; i++) {
         let match = item[i].getElementsByTagName('h5')[0];
 
-        if(match){
+        if (match) {
             let searchvalue = match.textContent || match.innerHTML;
-            if(searchvalue.toUpperCase().indexOf(searchbox) > -1){
+            if (searchvalue.toUpperCase().indexOf(searchbox) > -1) {
                 item[i].style.display = "";
-            }else{
+            } else {
                 item[i].style.display = "none";
             }
         }
     }
 }
+
+
+const plus = document.querySelector(".plus"),
+    minus = document.querySelector(".minus"),
+    num = document.querySelector(".num");
+productAmmount = document.querySelector(".productAmmount"),
+    productPrice = document.querySelector(".productPrice"),
+    price = document.querySelector(".totalPrice");
+
+let a = 1;
+
+plus.addEventListener("click", function () {
+    a++;
+    productAmmount.innerText = a;
+    a = (a < 10) ? "0" + a : a;
+    num.innerText = a;
+    price.innerHTML = a * productPrice.innerHTML;
+});
+
+minus.addEventListener("click", function () {
+    if (a > 1) {
+        a--;
+        productAmmount.innerText = a;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+        price.innerHTML = a * productPrice.innerHTML;
+    }
+});
+
+const deleteItem = document.querySelector(".removeCartItem"),
+    card = document.querySelector(".cartItemCard");
+
+deleteItem.addEventListener("click", function(){
+    card.style.display = "none";
+    price.innerText = 0;
+    productAmmount.innerText = 0;
+    productPrice.innerText = 0;
+});
+
 

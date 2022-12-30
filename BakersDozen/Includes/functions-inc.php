@@ -19,7 +19,6 @@
         echo $stmt->error;
         exit();
         mysqli_stmt_close($stmt);
-
         header("location:../account.php?error=none");
     }
 
@@ -95,7 +94,7 @@
 }
 
     function loginUser($conn, $username, $password){
-        $userExists = userExists($conn, $username);
+        $userExists = emailExists($conn, $username);
         if(!$userExists){
             header("location:../login.php?error=incorrectLogin");
             exit();

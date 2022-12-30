@@ -7,15 +7,15 @@
         <div class="col-6 col-lg-6">
             <img src="../Images/Baker.jpg" class="loginImageStyling" alt="">
         </div>
-        <div class="col-6 col-lg-6 loginForm" style="overflow:hidden;">
+        <div class="col-6 col-lg-6 col-sm-12 loginForm" style="overflow:hidden;">
             <div class="form-container-fluid loginFormStyling">
                 <h1 class="pb-5">LOGIN</h1>
-                <form action="../HTML/index.html" class="formHeight">
+                <form action="index.php" class="formHeight">
                     <div class="mb-3 pb-4" class="formInputPadding">
-                        <input type="text" class="form-control formInput" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" class="form-control formInput" placeholder="Email" required aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="mb-3 pb-4">
-                        <input type="text" class="form-control formInput" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="password" class="form-control formInput" placeholder="Password" required aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="mb-3 form-check pb-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">

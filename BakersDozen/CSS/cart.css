@@ -12,14 +12,60 @@
     width: 150px;
 }
 
-.cardBody{
-    position: relative;
-    top: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#cartCard{
+    background-color: lightgray;
 }
 
-.cardBody > .card-title{
-    font-size: 20px;
+.chkBTN{
+    background-color: #2f150c;
+}
+
+#checkoutLink{
+    text-decoration: none;
+}
+
+.chkBTNText{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+.orderSummary{
+    background-color: white;
+}
+
+.orderSummary p{
+    text-align: center;
+}
+
+.payMethod{
+    text-align: center;
+}
+
+.iconAlign{
+    justify-content: center;
+    height: 100px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper span{
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper .plus{
+    cursor: pointer;
+}
+
+.wrapper .minus{
+    cursor: pointer;
+}
+
+.selectHeight{
+    height: 100px;
 }
