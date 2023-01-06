@@ -11,7 +11,7 @@ $title = "Baker's Dozen | Baking Kit";
     <div class="container p-5">
         <div class="row">
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="productDetails.php"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
