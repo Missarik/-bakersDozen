@@ -17,7 +17,6 @@
 
         mysqli_stmt_execute($stmt);
         echo $stmt->error;
-        exit();
         mysqli_stmt_close($stmt);
         header("location:../account.php?error=none");
     }
