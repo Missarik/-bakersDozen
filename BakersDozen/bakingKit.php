@@ -11,7 +11,7 @@ $title = "Baker's Dozen | Baking Kit";
     </div>
 
     <?php
-        $data = loadUsers($conn);
+        $data = loadProducts($conn);
     ?>
 
     <div class="container p-5">
@@ -23,8 +23,9 @@ $title = "Baker's Dozen | Baking Kit";
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
                                 alt=""></a>
                         <div class="card-body">
+
                             <h5 class="card-title"><?php echo $data['productName'];?></h5>
-                            <p class="card-text price">€25</p>
+                            <p class="card-text price">€<?php echo $result['productPrice'];?></p>
                         </div>
                     </div>
                 </a>

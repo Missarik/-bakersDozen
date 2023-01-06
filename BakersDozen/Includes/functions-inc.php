@@ -146,19 +146,21 @@
         header("location: ../registration.php?error=none");
 }
 
-$data = loadUsers($conn);
+
 
 function loadProducts($conn) {
     $sql = "SELECT * FROM bdProducts";
     $stmt = mysqli_stmt_init($conn);
+    $data = loadProducts($conn);
+    
     while($result = mysqli_fetch_assoc($data)) {
+        echo("Nick Gurr");
         $productName = $result["productName"];
         $productPrice = $result["productPrice"];
         $productServing = $result["productServing"];
         $productPrepTime = $result["productPrepTime"];
         $productCookTime = $result["productCookTime"];
         $description = $result["description"];
-
     }
 }
 
