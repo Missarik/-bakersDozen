@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="mb-3 pb-4" class="formInputPadding">
-                        <input type="date" class="formInput form-control sharedInput" id="exampleInputEmail1" name="dob" required placeholder="Date of Birth">
+                        <input type="text" class="formInput form-control sharedInput" id="exampleInputEmail1" name="dob" required placeholder="Date of Birth" onfocus="(this.type = 'date')">
                     </div>
                     <div class="mb-3 pb-4" class="formInputPadding">
                         <input type="email" class="formInput form-control sharedInput" id="exampleInputEmail1" name="email" required placeholder="Email Address">

@@ -143,4 +143,58 @@
         include 'logout-inc.php';
         header("location: ../registration.php?error=none");
 }
+
+
+
+function loadProducts($conn) {
+    $sql = "SELECT * FROM bdProducts";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        echo "Could not load products";
+        exit();
+    }
+
+    mysqli_stmt_execute($stmt);
+
+    $data = mysqli_stmt_get_result($stmt);
+
+    mysqli_stmt_close($stmt);
+
+    return $data;
+    
+    // while($result = mysqli_fetch_assoc($data)) {
+        
+    //     $productName = $result["productName"];
+    //     $productPrice = $result["productPrice"];
+    //     $productServing = $result["productServing"];
+    //     $productPrepTime = $result["productPrepTime"];
+    //     $productCookTime = $result["productCookTime"];
+    //     $description = $result["description"];
+    // }
+}
+
+// SQL query to select data from database
+function loadProduct($conn, $id) {
+    $sql = "SELECT * FROM bdProducts WHERE productId = ?;";
+    $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        header("location:../productDetails.php?id=".$id);
+            exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "s", $id);
+    mysqli_stmt_execute($stmt);
+
+    $result = mysqli_stmt_get_result($stmt);
+    mysqli_stmt_close($stmt);
+
+    if($row = mysqli_fetch_assoc($result)) {
+        return $row;
+    }
+    else {
+        
+        return false;
+    }
+}
 ?>

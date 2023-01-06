@@ -1,6 +1,8 @@
 <?php
     $title = "Baker's Dozen | Baking Kit";
     include 'Includes/header.php';
+    include 'Includes/dbh-inc.php';
+    include 'Includes/functions-inc.php';
 ?>
 
 <h1 class="pb-3 bakingPackageText">BAKING PACKAGES</h1>
@@ -11,20 +13,29 @@
                     <div class="col-md-4">
                         <img src="../Images/cupcake.jpg" class="img-fluid rounded-start " alt="..."><br><br>
                         <a href="#" class="btn shopNow">ADD TO CART</a>
+                    </div>
+                    
+                    <?php
+                    if(isset($_GET["id"])){
+                        $id = $_GET["id"];
+                        $result = loadProduct($conn, $id);
+?>
 
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h2 class="card-title">Double Chocolate Chip Muffin Package</h2>
-                            <p class="card-text price">€25</p>
-                            <p class="desc">Servings |<b> 4 people</b></p>
-                            <p class="desc">Preparation Time |<b> 15 mins</b></p>
-                            <p class="desc">Cook Time |<b> 20 mins</b></p>
-                            <p class="desc">The classic chocolate cupcake that cannot get any simpler than this. Dark
-                                chocolate topped with chocolate chips.</p>
-                            <p class="desc">Comes with 18 oven-safe cupcake cups.</p>
-                        </div>
-                    </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="card-title"><?php echo $result['productName'];?></h2>
+                                    <p class="card-text price">€<?php echo $result['productPrice'];?></p>
+                                    <p class="desc">Servings |<b> <?php echo $result['productServing'];?> People</b></p>
+                                    <p class="desc">Preparation Time |<b> <?php echo $result['productPrepTime'];?> mins</b></p>
+                                    <p class="desc">Cook Time |<b> <?php echo $result['productCookTime'];?> mins</b></p>
+                                    <p class="desc"><?php echo $result['description'];?></p>
+                                </div>
+                            </div>
+<?php
+                    }
+
+                    ?>
+                    
                 </div>
             </div>
         </div>
