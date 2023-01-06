@@ -1,6 +1,7 @@
 <?php
     $title = "Baker's Dozen | Baking Kit";
     include 'Includes/header.php';
+    include 'Includes/dbh-inc.php';
 ?>
 
 <h1 class="pb-3 bakingPackageText">BAKING PACKAGES</h1>
@@ -29,6 +30,76 @@
             </div>
         </div>
     </div>
+
+
+<?php
+
+if (isset($_POST['post_comment'])){
+
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+    $productId = 1;
+    
+
+// INCLUDE THIS CODE INSTEAD OF Line 41 once products are connected to database // 
+    
+    // if (isset($_GET["productId"])){
+    //     $productId = $_GET["productId"];
+    // }
+    // else{
+    //     // redirect back to product list (header link url)
+        
+    // }
+
+    $sql = "INSERT INTO bdComments (name, message, productId)
+    VALUES (?,?,?);";
+
+    $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt,$sql)){
+        echo "Comment could not be posted";
+        exit();
+    }
+    
+    mysqli_stmt_bind_param($stmt,'sss', $name, $message, $productId);
+
+    mysqli_stmt_execute($stmt);
+    echo mysqli_error($conn);
+    mysqli_stmt_close($stmt);
+    
+    echo "Comment saved successfully";    
+}
+
+?>
+<h1 class="pb-3 commentHeaderText">COMMENTS</h1>
+<!-- Comment Section -->
+<div class="wrapper">
+    <form action="productDetails.php" method="post" class="form">
+        <input type="text" class="name" name="name" id="name" placeholder="Name">
+        <br>
+        <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <br>
+        <button type="submit" class="btn" name="post_comment">Post Comment</button>
+    </form>
+</div>
+
+<div class="content">
+<?php 
+
+$sql = "SELECT * FROM dbComments"; 
+$result = $conn->query($sql);
+
+if($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()){
+?>
+<h3><?php echo $row['name'];?></h3>
+<p><?php echo $row['message'];?></p>
+
+
+<?php } } ?>
+
+</div>
+
+
     <h1 class="pb-3 bakingPackageText">OTHER DESSERTS YOU MAY LIKE</h1>
     <div class="container p-5">
         <div class="row">

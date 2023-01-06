@@ -1,0 +1,28 @@
+.wrapper {
+    border-radius: 10px;
+    width: 500px; 
+    height: 400px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form input{ 
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.commentHeaderText{
+text-align: center;
+font-family: "Montserrat", sans-serif;
+font-weight: 100;
+}

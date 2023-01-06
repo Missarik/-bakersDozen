@@ -95,7 +95,7 @@
 }
 
     function loginUser($conn, $username, $password){
-        $userExists = userExists($conn, $username);
+        $userExists = emailExists($conn, $username);
         if(!$userExists){
             header("location:../login.php?error=incorrectLogin");
             exit();
