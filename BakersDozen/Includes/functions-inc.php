@@ -151,17 +151,29 @@
 function loadProducts($conn) {
     $sql = "SELECT * FROM bdProducts";
     $stmt = mysqli_stmt_init($conn);
-    $data = loadProducts($conn);
     
-    while($result = mysqli_fetch_assoc($data)) {
-        echo("Nick Gurr");
-        $productName = $result["productName"];
-        $productPrice = $result["productPrice"];
-        $productServing = $result["productServing"];
-        $productPrepTime = $result["productPrepTime"];
-        $productCookTime = $result["productCookTime"];
-        $description = $result["description"];
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        echo "Could not load products";
+        exit();
     }
+
+    mysqli_stmt_execute($stmt);
+
+    $data = mysqli_stmt_get_result($stmt);
+
+    mysqli_stmt_close($stmt);
+
+    return $data;
+    
+    // while($result = mysqli_fetch_assoc($data)) {
+        
+    //     $productName = $result["productName"];
+    //     $productPrice = $result["productPrice"];
+    //     $productServing = $result["productServing"];
+    //     $productPrepTime = $result["productPrepTime"];
+    //     $productCookTime = $result["productCookTime"];
+    //     $description = $result["description"];
+    // }
 }
 
 // SQL query to select data from database
