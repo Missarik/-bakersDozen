@@ -11,7 +11,7 @@ $title = "Baker's Dozen | Baking Kit";
     <div class="container p-5">
         <div class="row">
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="productDetails.php"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -56,7 +56,7 @@ $title = "Baker's Dozen | Baking Kit";
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="../Images/Macarons.jpg" class="img-fluid rounded-start " alt="...">
-                    <a href="../HTML/productDetails.html"  class="btn shopNowBakingBig"><img src="../Images/plus.svg" class="plusBakingBig"
+                    <a href="../HTML/productDetails.php"  class="btn shopNowBakingBig"><img src="../Images/plus.svg" class="plusBakingBig"
                             alt=""></a>
                 </div>
                 <div class="col-md-8">
@@ -73,7 +73,7 @@ $title = "Baker's Dozen | Baking Kit";
 
         <div class="row">
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -86,7 +86,7 @@ $title = "Baker's Dozen | Baking Kit";
                 </a>
             </div>
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -99,7 +99,7 @@ $title = "Baker's Dozen | Baking Kit";
                 </a>
             </div>
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -115,7 +115,7 @@ $title = "Baker's Dozen | Baking Kit";
 
         <div class="row">
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -128,7 +128,7 @@ $title = "Baker's Dozen | Baking Kit";
                 </a>
             </div>
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -141,7 +141,7 @@ $title = "Baker's Dozen | Baking Kit";
                 </a>
             </div>
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -168,7 +168,7 @@ $title = "Baker's Dozen | Baking Kit";
                 </div>
                 <div class="col-md-4">
                     <img src="../Images/Macarons.jpg" class="img-fluid rounded-start " alt="...">
-                    <a href="../HTML/productDetails.html"  class="btn shopNowBakingBigRight"><img src="../Images/plus.svg" class="plusBakingBig" alt="">
+                    <a href="../HTML/productDetails.php"  class="btn shopNowBakingBigRight"><img src="../Images/plus.svg" class="plusBakingBig" alt="">
                     </a>
                 </div>
             </div>
@@ -176,7 +176,7 @@ $title = "Baker's Dozen | Baking Kit";
 
         <div class="row">
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -189,7 +189,7 @@ $title = "Baker's Dozen | Baking Kit";
                 </a>
             </div>
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"
@@ -202,7 +202,7 @@ $title = "Baker's Dozen | Baking Kit";
                 </a>
             </div>
             <div class="col-lg-4 col-sm-12 p-3 item">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
                         <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"

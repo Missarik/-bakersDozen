@@ -2,6 +2,28 @@
     $title = "Baker's Dozen | Baking Kit";
     include 'Includes/header.php';
     include 'Includes/dbh-inc.php';
+<<<<<<< Updated upstream
+=======
+
+?>
+
+<?php
+
+    if(isset($_POST['post_comment'])) {
+        $name = $_POST['name'];
+        $message = $_POST['message'];
+
+        $sql = "INSERT INTO bakersDozen (name, message)
+        VALUES('$name', '$message')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Comment posted successfully";
+        } else { 
+            echo "Error: " .$sql . "<br>" . $conn->error; 
+        }
+    }
+
+>>>>>>> Stashed changes
 ?>
 
 <h1 class="pb-3 bakingPackageText">BAKING PACKAGES</h1>
@@ -144,6 +166,42 @@ if($result->num_rows > 0) {
             </div>
         </div>
     </div>
+
+<h1 class="pb-5 pt-5 bakingPackageText">COMMENT SECTION</h1>
+
+<div class="commentImg"></div>
+
+<div class="wrapper">
+    <form action="" method="post" class="form">
+        <input type="text" class="name" name="name" placeholder="Name">
+        <br>
+        <textarea name="" cols="30" rows="10" class="message" placeholder="Message"></textarea>
+        <br>
+        <button type="submit" class="btn" name="post_comment">Post Comment</button>
+    </form>
+    <br>
+</div>
+
+<div class="content">
+
+    <?php
+
+        $sql = "SELECT * from bakersDozen";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+            // echo "id: " . $row["id"] . "- Name" . $row['']
+        }
+    }
+        
+
+    ?>
+
+
+    <h3> <?php echo $row['name'] ?> </h3>
+    <p> <?php echo $row['message'] ?> </p>
+</div>
 
 <?php
     include 'Includes/footer.php';
