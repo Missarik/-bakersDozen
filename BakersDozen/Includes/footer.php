@@ -19,7 +19,7 @@
         </ul>
     </div>
     <div class="footer-bottom">
-        <p>&copy 2022 Baker's Dozen</p>
+        <p>&copy 2023 Baker's Dozen</p>
     </div>
 </footer>
 <script src="JavaScript/script.js"></script>
