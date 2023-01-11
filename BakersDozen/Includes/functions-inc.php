@@ -21,6 +21,21 @@
         header("location:../account.php?error=none");
     }
 
+    function addWishlist($conn, $productId){
+        $sql = "INSERT INTO bdCart (productId) VALUES (?);";
+        $stmt = mysqli_stmt_init($conn);
+        if(!mysqli_stmt_prepare($stmt, $sql))
+        {
+            header("location: ../bakingKit.php?error=stmtfailed");
+            exit();
+        }
+        mysqli_stmt_bind_param($stmt, "s", $productId);
+        mysqli_stmt_execute($stmt);
+        echo $stmt->error;
+        mysqli_stmt_close($stmt);
+        header("location:../bakingKit.php?error=none");
+    }
+
     function loadUsers($conn){
         //function to load all users from database
 
@@ -168,7 +183,7 @@ function loadUtensils($conn) {
 function loadProducts($conn) {
     $sql = "SELECT * FROM bdProducts";
     $stmt = mysqli_stmt_init($conn);
-    
+
     if(!mysqli_stmt_prepare($stmt, $sql)) {
         echo "Could not load products";
         exit();
@@ -181,9 +196,9 @@ function loadProducts($conn) {
     mysqli_stmt_close($stmt);
 
     return $data;
-    
+
     // while($result = mysqli_fetch_assoc($data)) {
-        
+
     //     $productName = $result["productName"];
     //     $productPrice = $result["productPrice"];
     //     $productServing = $result["productServing"];
@@ -193,6 +208,7 @@ function loadProducts($conn) {
     // }
 }
 
+// SQL query to select data from database
 // SQL query to select data from database
 function loadProduct($conn, $id) {
     $sql = "SELECT * FROM bdProducts WHERE productId = ?;";
@@ -212,7 +228,7 @@ function loadProduct($conn, $id) {
         return $row;
     }
     else {
-        
+
         return false;
     }
 }

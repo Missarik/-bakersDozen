@@ -41,7 +41,6 @@
     }
     else{
         header("location: ../account.php");
-
     }
 
 ?>
