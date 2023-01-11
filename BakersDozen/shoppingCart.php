@@ -9,26 +9,39 @@ include 'Includes/header.php';
         <div class="col-lg-6 p-1 ">
             <div class="card mb-3 border-0 cartItemCard" style="max-width: 100%;">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="../Images/cupcake.jpg" class="img-fluid rounded-start " alt="..."><br><br>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body">
-                            <h2 class="card-text">
-                                <h5>Double Chocolate Chip Muffin Package</h5>
-                                <p class="desc">Servings |<b> 4 people</b></p>
-                                <p class="desc">Preparation Time |<b> 15 mins</b></p>
-                                <p class="desc">Cook Time |<b> 20 mins</b></p>
-                                <button class="btn btn-BC4C35 removeCartItem"><i class="bi bi-trash-fill"></i></button>
+                    <!--Card-->
+                    <?php
+                    if (isset($_GET["id"])) {
+                        $id = $_GET["id"];
+                        $result = loadProduct($conn, $id);
+                    ?>
+
+                        <div class="col-md-4">
+                            <img src="Images/products/<?php echo $result["image"]; ?>" class="card-img-top cardImageStyling" alt="Showcase Image"><br><br>
+                            <a href="#" class="btn shopNow">ADD TO CART</a>
                         </div>
-                    </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title"><?php echo $result['productName']; ?></h2>
+                                <p class="card-text price">€<?php echo $result['productPrice']; ?></p>
+                                <p class="desc">Servings |<b> <?php echo $result['productServing']; ?> People</b></p>
+                                <p class="desc">Preparation Time |<b> <?php echo $result['productPrepTime']; ?> mins</b></p>
+                                <p class="desc">Cook Time |<b> <?php echo $result['productCookTime']; ?> mins</b></p>
+                                <p class="desc"><?php echo $result['description']; ?></p>
+                            </div>
+                        </div>
+                    <?php
+                    }
+
+                    ?>
                     <div class="col-md-2 pt-4 wrapper">
                         <span class="minus"><i class="bi bi-dash"></i></span>
                         <span class="num">01</span>
                         <span class="plus"><i class="bi bi-plus"></i></span>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <div class="col-lg-4 p-1 item">
