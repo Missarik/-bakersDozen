@@ -5,7 +5,7 @@ $title = "Baker's Dozen | Baking Kit";
     include 'Includes/functions-inc.php';
 ?>
 
-<h1 class="pb-3 bakingPackageText">BAKING PACKAGES</h1>
+<h1 class="pb-3 bakingPackageText">UTENSILS SHOP</h1>
     <div>
         <input type="search" class="form-control" style="width: 35%; margin: auto; display: block; text-align: center;" id="search-item"  placeholder="Search Packages &#x1F50E;&#xFE0E;" onkeyup="search();">
     </div>
