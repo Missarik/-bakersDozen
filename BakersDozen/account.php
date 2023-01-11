@@ -9,6 +9,7 @@
     </div>
     <div class="pt-5 container-fluid flexBox justify-content-center p-5">
         <div class="col-lg-5 col-sm-11 p-5 card">
+        <img src="../Images/person.svg" class="profileUser" alt="">
             <input type="file" name="userfile" id="userfile">
             <button type="submit" class="btn shopNow" name="submit" value="upload" id="upload">Upload Profile Picture</button>
         </div>
