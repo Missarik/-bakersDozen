@@ -20,6 +20,7 @@ $data = loadProducts($conn);
         while ($result = mysqli_fetch_assoc($data)) {
 
 
+        
             $productId = $result["productId"];
             $productName = $result["productName"];
             $productPrice = $result["productPrice"];
@@ -33,8 +34,8 @@ $data = loadProducts($conn);
 
         ?>
 
-            <div class="col-sm p-3 item">
-                
+<div class="col-sm p-3 item">
+                <a href="productDetails.php?id=<?php echo $productId; ?>" class="bakingCardContent">
                     <div class="card border-0">
                         <form action="Includes/shoppingCart-inc.php" method="post">
                         <a name="productId" href="productDetails.php?id=<?php echo $productId; ?>" class="bakingCardContent">
