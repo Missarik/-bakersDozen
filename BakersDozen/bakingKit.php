@@ -20,7 +20,7 @@ $counter = 0;
         while($result = mysqli_fetch_assoc($data)) {
 
             
-            
+            $productId = $result["productId"];
             $productName = $result["productName"];
             $productPrice = $result["productPrice"];
             $productServing = $result["productServing"];
@@ -34,7 +34,7 @@ $counter = 0;
             ?>
 
 <div class="col-sm p-3 item">
-                <a href="productDetails.php" class="bakingCardContent">
+                <a href="productDetails.php?id=<?php echo $productId; ?>" class="bakingCardContent">
                     <div class="card border-0">
                         <img src="Images/products/<?php echo $image; ?>" class="card-img-top cardImageStyling">
                         <a href="../HTML/#.html"  class="btn shopNowBaking"><img src="../Images/plus.svg" class="plusBaking"

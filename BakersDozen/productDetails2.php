@@ -8,6 +8,14 @@
         <div class="row">
             <div class="card mb-3 border-0" style="max-width: 100%;">
                 <div class="row g-0">
+
+
+
+                <?php
+                    if(isset($_GET["id"])){
+                        $id = $_GET["id"];
+                        $result = loadProduct($conn, $id);
+?>
                     <div class="col-md-4">
                         <img src="../Images/Whisk.jpg" class="img-fluid rounded-start " alt="..."><br><br>
                         <input type="number" min="1" class="quantityInput" placeholder="QTY">

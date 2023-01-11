@@ -10,16 +10,18 @@
         <div class="row">
             <div class="card mb-3 border-0" style="max-width: 100%;">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="../Images/cupcake.jpg" class="img-fluid rounded-start " alt="..."><br><br>
-                        <a href="#" class="btn shopNow">ADD TO CART</a>
-                    </div>
+                    
                     
                     <?php
                     if(isset($_GET["id"])){
                         $id = $_GET["id"];
                         $result = loadProduct($conn, $id);
 ?>
+
+                    <div class="col-md-4">
+                        <img src="Images/products/<?php echo $result["image"]; ?>" class="card-img-top cardImageStyling" alt="Showcase Image"><br><br>
+                        <a href="#" class="btn shopNow">ADD TO CART</a>
+                    </div>
 
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -44,9 +46,9 @@
     <div class="container p-5">
         <div class="row">
             <div class="col-sm p-3">
-                <a href="productDetails.html" class="bakingCardContent">
+                <a href="productDetails.php" class="bakingCardContent">
                     <div class="card border-0">
-                        <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
+                        <img src="Images/products/<?php echo $image; ?>" class="card-img-top cardImageStyling">
                         <a href="../HTML/#.html" class="btn shopNowBaking"><img src="../Images/plus.svg"
                                 class="plusBaking" alt=""></a>
                         <div class="card-body">
