@@ -12,10 +12,10 @@
                 <h1 class="pb-5">LOGIN</h1>
                 <form action="index.php" class="formHeight">
                     <div class="mb-3 pb-4" class="formInputPadding">
-                        <input type="email" class="form-control formInput" placeholder="Email" required aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" name="email" class="form-control formInput" placeholder="Email" required aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="mb-3 pb-4">
-                        <input type="password" class="form-control formInput" placeholder="Password" required aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="password" name="password" class="form-control formInput" placeholder="Password" required aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="mb-3 form-check pb-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -24,7 +24,7 @@
                     <div class="pb-5">
                     <p>Don't have an account? <span><a href="signup.php" class="signUpHere">Sign up here!</a></span></p>
                     </div>
-                    <button type="submit" class="btn btn-BC4C35 loginButton">Login</button>
+                    <button type="submit" name="submit" class="btn btn-BC4C35 loginButton">Login</button>
                 </form>
             </div>
             

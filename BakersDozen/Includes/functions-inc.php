@@ -98,8 +98,8 @@
             return false;
         }
 }
-    function emptyInputLogin($username, $password){
-        if(empty($username) || empty($password)){
+    function emptyInputLogin($email, $password){
+        if(empty($email) || empty($password)){
             return true;
         }
         else{
@@ -107,8 +107,8 @@
         }
 }
 
-    function loginUser($conn, $username, $password){
-        $userExists = emailExists($conn, $username);
+    function loginUser($conn, $email, $password){
+        $userExists = emailExists($conn, $email);
         if(!$userExists){
             header("location:../login.php?error=incorrectLogin");
             exit();
@@ -123,25 +123,25 @@
         }
         else{
             session_start();
-            $_SESSION["username"] = $username;
+            $_SESSION["email"] = $email;
 
-            header("location:../profile.php");
+            header("location:../account.php");
             exit();
         }
 }
 
-    function updateUser($conn, $username, $firstName, $lastName, $emailAddress){
-        $sql = "UPDATE users SET firstName = ?, lastName = ?, emailAddress = ? WHERE username = ?;";
+    function updateUser($conn, $email, $firstName, $lastName){
+        $sql = "UPDATE bdUsers SET firstName = ?, lastName = ? WHERE emailAddress = ?;";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("location: ../profile.php?error=updateFailed");
+            header("location: ../account.php?error=updateFailed");
             exit();
         }
-        mysqli_stmt_bind_param($stmt, "ssss", $firstName, $lastName, $emailAddress, $username);
+        mysqli_stmt_bind_param($stmt, "sss", $firstName, $lastName, $emailAddress);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
 
-        header("location: ../profile.php?error=none");
+        header("location: ../account.php?error=none");
 }
 
     function deleteUser($conn, $username){
