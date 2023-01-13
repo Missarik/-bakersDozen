@@ -16,8 +16,8 @@
         mysqli_stmt_bind_param($stmt, "sssssss", $firstName, $lastName, $dob, $emailAddress, $mobileNumber, $nationality, $hashedPassword);
 
         mysqli_stmt_execute($stmt);
-        echo $stmt->error;
         mysqli_stmt_close($stmt);
+
         header("location:../account.php?error=none");
     }
 
