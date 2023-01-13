@@ -179,6 +179,93 @@ function loadUtensils($conn) {
     
 }
 
+// SQL query to select data from database
+function loadUtensil($conn, $id) {
+    $sql = "SELECT * FROM bdUtensils WHERE productId = ?;";
+    $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        header("location:../productDetails2.php?id=".$id);
+            exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "s", $id);
+    mysqli_stmt_execute($stmt);
+
+    $result = mysqli_stmt_get_result($stmt);
+    mysqli_stmt_close($stmt);
+
+    if($row = mysqli_fetch_assoc($result)) {
+        return $row;
+    }
+    else {
+        
+        return false;
+    }
+}
+
+function getRandomUtensil($conn, $productType) {
+    $sql = "SELECT * FROM bdUtensils WHERE productType = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        echo "Could not load products";
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "s", $productType);
+
+    mysqli_stmt_execute($stmt);
+
+    $data = mysqli_stmt_get_result($stmt);
+
+    
+
+    mysqli_stmt_close($stmt);
+
+    return $data;
+    
+    // while($result = mysqli_fetch_assoc($data)) {
+        
+    //     $productName = $result["productName"];
+    //     $productPrice = $result["productPrice"];
+    //     $productServing = $result["productServing"];
+    //     $productPrepTime = $result["productPrepTime"];
+    //     $productCookTime = $result["productCookTime"];
+    //     $description = $result["description"];
+    // }
+}
+
+function getRandomProduct($conn, $productType) {
+    $sql = "SELECT * FROM bdProducts WHERE productType = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if(!mysqli_stmt_prepare($stmt, $sql)) {
+        echo "Could not load products";
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "s", $productType);
+
+    mysqli_stmt_execute($stmt);
+
+    $data = mysqli_stmt_get_result($stmt);
+
+    
+
+    mysqli_stmt_close($stmt);
+
+    return $data;
+    
+    // while($result = mysqli_fetch_assoc($data)) {
+        
+    //     $productName = $result["productName"];
+    //     $productPrice = $result["productPrice"];
+    //     $productServing = $result["productServing"];
+    //     $productPrepTime = $result["productPrepTime"];
+    //     $productCookTime = $result["productCookTime"];
+    //     $description = $result["description"];
+    // }
+}
 
 function loadProducts($conn) {
     $sql = "SELECT * FROM bdProducts";

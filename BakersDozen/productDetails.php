@@ -16,10 +16,12 @@
                     if(isset($_GET["id"])){
                         $id = $_GET["id"];
                         $result = loadProduct($conn, $id);
+                        
+                        $productType = $result['productType'];
 ?>
 
                     <div class="col-md-4">
-                        <img src="Images/products/<?php echo $result["image"]; ?>" class="card-img-top cardImageStyling" alt="Showcase Image"><br><br>
+                        <img src="Images/products/<?php echo $result['image']; ?>" class="card-img-top cardImageStyling" alt="Showcase Image"><br><br>
                         <a href="#" class="btn shopNow">ADD TO CART</a>
                     </div>
 
@@ -42,48 +44,55 @@
             </div>
         </div>
     </div>
+
+                    <?php 
+                        $data = getRandomProduct($conn, $productType);
+                    ?>
+
     <h1 class="pb-3 bakingPackageText">OTHER DESSERTS YOU MAY LIKE</h1>
     <div class="container p-5">
         <div class="row">
+            <?php $counter = 0;
+        while($result = mysqli_fetch_assoc($data)) {
+
+            
+            $productId = $result["productId"];
+            $productName = $result["productName"];
+            $productPrice = $result["productPrice"];
+            $image = $result["image"];
+
+
+
+
+            ?>
             <div class="col-sm p-3">
-                <a href="productDetails.php" class="bakingCardContent">
+                <a href="productDetails.php?id=<?php echo $productId; ?>" class="bakingCardContent">
                     <div class="card border-0">
                         <img src="Images/products/<?php echo $image; ?>" class="card-img-top cardImageStyling">
                         <a href="../HTML/#.html" class="btn shopNowBaking"><img src="../Images/plus.svg"
                                 class="plusBaking" alt=""></a>
                         <div class="card-body">
-                            <h5 class="card-title">Double Chocolate Chip Muffin Package</h5>
-                            <p class="card-text price">€25</p>
+                        <h5 class="card-title"><?php echo $productName;?></h5>
+                            <p class="card-text price">€<?php echo $productPrice;?></p>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-sm p-3">
-                <a href="productDetails.html" class="bakingCardContent">
-                    <div class="card border-0">
-                        <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
-                        <a href="../HTML/#.html" class="btn shopNowBaking"><img src="../Images/plus.svg"
-                                class="plusBaking" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Double Chocolate Chip Muffin Package</h5>
-                            <p class="card-text price">€25</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm p-3">
-                <a href="productDetails.html" class="bakingCardContent">
-                    <div class="card border-0">
-                        <img class="card-img-top cardImageStyling" src="../Images/cupcake.jpg">
-                        <a href="../HTML/#.html" class="btn shopNowBaking"><img src="../Images/plus.svg"
-                                class="plusBaking" alt=""></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Double Chocolate Chip Muffin Package</h5>
-                            <p class="card-text price">€25</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+
+            <?php
+            $counter++;
+            if($counter == 3){
+?>
+    </div>
+    <div class="row">
+<?php
+                $counter = 0;
+            }
+        }
+    ?>
+
+        </div>
+    </div>
         </div>
     </div>
 
