@@ -2,8 +2,6 @@
     $title = "Baker's Dozen | Baking Kit";
     include 'Includes/header.php';
     include 'Includes/dbh-inc.php';
-<<<<<<< Updated upstream
-=======
 
 ?>
 
@@ -13,7 +11,7 @@
         $name = $_POST['name'];
         $message = $_POST['message'];
 
-        $sql = "INSERT INTO bakersDozen (name, message)
+        $sql = "INSERT INTO bdComments (name, message)
         VALUES('$name', '$message')";
 
         if ($conn->query($sql) === TRUE) {
@@ -23,7 +21,6 @@
         }
     }
 
->>>>>>> Stashed changes
 ?>
 
 <h1 class="pb-3 bakingPackageText">BAKING PACKAGES</h1>
@@ -92,11 +89,13 @@ if (isset($_POST['post_comment'])){
 }
 
 ?>
-<h1 class="pb-3 commentHeaderText">COMMENTS</h1>
 <!-- Comment Section -->
-<div class="wrapper">
+
+<h1 class="pb-3 bakingPackageText">COMMENTS</h1>
+
+<div class="col-lg-5 col-sm-11 mx-auto p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
     <form action="productDetails.php" method="post" class="form">
-        <input type="text" class="name" name="name" id="name" placeholder="Name">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
         <br>
         <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
         <br>
@@ -167,20 +166,7 @@ if($result->num_rows > 0) {
         </div>
     </div>
 
-<h1 class="pb-5 pt-5 bakingPackageText">COMMENT SECTION</h1>
 
-<div class="commentImg"></div>
-
-<div class="wrapper">
-    <form action="" method="post" class="form">
-        <input type="text" class="name" name="name" placeholder="Name">
-        <br>
-        <textarea name="" cols="30" rows="10" class="message" placeholder="Message"></textarea>
-        <br>
-        <button type="submit" class="btn" name="post_comment">Post Comment</button>
-    </form>
-    <br>
-</div>
 
 <div class="content">
 

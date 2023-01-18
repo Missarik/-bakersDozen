@@ -1,39 +1,12 @@
-<<<<<<< Updated upstream
-.wrapper {
-    border-radius: 10px;
-    width: 500px; 
-    height: 400px;
-    flex-direction: column;
-=======
-.wrapper{ 
+/* .wrapper{ 
     background: white;
     border-radius: 10px;
     width: 500px;
->>>>>>> Stashed changes
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-<<<<<<< Updated upstream
-.wrapper .form input{ 
-    font-size: 15px;
-    border-radius: 10px;
-}
-
-
-
-
-.content{
-    display: flex;
-    flex-direction: column;
-}
-
-.commentHeaderText{
-text-align: center;
-font-family: "Montserrat", sans-serif;
-font-weight: 100;
-=======
 .wrapper .form input { 
     background: #b6b6b6;
     color: black;
@@ -56,9 +29,9 @@ border-radius: 20px;
 padding: 10px;
 border: none;
 outline: none;  
-}
+} */
 
-.wrapper .form .btn {
+/* .wrapper .form .btn {
     color:white;
     background-color: #592614;
     border-radius: 25px;
@@ -71,11 +44,11 @@ outline: none;
     background-color: #bc4c35;
     color: white;
     
-}
+} */
 
 .commentImg{
 background-image: url("../Images/commentSectionImg.jpg");
 background-size: cover;
 height: 600px;
->>>>>>> Stashed changes
 }
+
