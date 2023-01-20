@@ -7,19 +7,19 @@
 
 <?php
 
-    if(isset($_POST['post_comment'])) {
-        $name = $_POST['name'];
-        $message = $_POST['message'];
+    // if(isset($_POST['post_comment'])) {
+    //     $name = $_POST['name'];
+    //     $message = $_POST['message'];
 
-        $sql = "INSERT INTO bdComments (name, message)
-        VALUES('$name', '$message')";
+    //     $sql = "INSERT INTO bdComments (name, message)
+    //     VALUES('$name', '$message')";
 
-        if ($conn->query($sql) === TRUE) {
-            echo "Comment posted successfully";
-        } else { 
-            echo "Error: " .$sql . "<br>" . $conn->error; 
-        }
-    }
+    //     if ($conn->query($sql) === TRUE) {
+    //         echo "Comment posted successfully";
+    //     } else { 
+    //         echo "Error: " .$sql . "<br>" . $conn->error; 
+    //     }
+    // }
 
 ?>
 
@@ -107,16 +107,32 @@ if (isset($_POST['post_comment'])){
 <?php 
 
 $sql = "SELECT * FROM dbComments"; 
-$result = $conn->query($sql);
 
-if($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()){
+$stmt = mysqli_stmt_init($conn);
+if(!mysqli_stmt_prepare($stmt, $sql)){
+    // error 
+}
+
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+
+mysqli_stmt_close($stmt);
+
+
+
+
+
+
+// $result = $conn->query($sql);
+
+// if($result->num_rows > 0) {
+    while($row = mysqli_fetch_assoc($result)){
 ?>
 <h3><?php echo $row['name'];?></h3>
 <p><?php echo $row['message'];?></p>
 
 
-<?php } } ?>
+<?php }  ?>
 
 </div>
 
