@@ -51,6 +51,7 @@ $title = "Baker's Dozen";
         </div>
     </div>
 
+    <a href="commentSectionTest.php"><button> Comment Section Test </button></a>
     <h1 class="p-5 offerText">WHY CHOOSE BAKER'S DOZEN?</h1>
     <div class="chooseBG">
         <h2 class="chooseUsText">WITH US ALL YOU NEED IS,<br>IN ONE SUSTAINABLE PACKAGE.</h2>
