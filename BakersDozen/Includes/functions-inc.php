@@ -319,4 +319,21 @@ function loadProduct($conn, $id) {
         return false;
     }
 }
+
+function loadComments($conn){
+
+    $sql = "SELECT * FROM bdComments;"; 
+
+    $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt, $sql)){
+        // error (use redirect with error in url)
+    }
+
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    
+    mysqli_stmt_close($stmt);
+    return $result;
+
+}
 ?>
