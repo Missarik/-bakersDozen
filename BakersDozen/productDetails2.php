@@ -92,9 +92,6 @@
         </div>
     </div>
 
-<<<<<<< Updated upstream
-    <h1 class="pb-3 pt-5 bakingPackageText">COMMENTS</h1>
-=======
 
 
 
@@ -102,7 +99,6 @@
     <!-- Comment Section - Kaia -->
 
 <h1 class="pb-3 pt-5 bakingPackageText">COMMENTS</h1>
->>>>>>> Stashed changes
 
 <div class="col-lg-5 col-sm-11 mx-auto p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
     <form action="productDetails.php" method="post" class="form">
