@@ -37,7 +37,7 @@
             <div class="flexBox">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
-                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onfocus="(this.type = 'date')">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Nationality</label>
