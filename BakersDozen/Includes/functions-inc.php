@@ -16,7 +16,7 @@
         mysqli_stmt_bind_param($stmt, "sssssss", $firstName, $lastName, $dob, $emailAddress, $mobileNumber, $nationality, $hashedPassword);
 
         mysqli_stmt_execute($stmt);
-<<<<<<< HEAD
+<<<< HEAD
         
         mysqli_stmt_close($stmt);
         
