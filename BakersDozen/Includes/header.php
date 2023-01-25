@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../CSS/subscribe.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/sitemap.css">
+    <link rel="stylesheet" href="../CSS/productDetails.css">
 
 </head>
 

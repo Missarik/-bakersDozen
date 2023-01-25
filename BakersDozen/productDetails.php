@@ -49,6 +49,47 @@
                         $data = getRandomProduct($conn, $productType);
                     ?>
 
+<?php
+
+if (isset($_POST['post_comment'])){
+
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+    $productId = 1;
+    
+
+// INCLUDE THIS CODE INSTEAD OF Line 41 once products are connected to database // 
+    
+    // if (isset($_GET["productId"])){
+    //     $productId = $_GET["productId"];
+    // }
+    // else{
+    //     // redirect back to product list (header link url)
+        
+    // }
+
+    $sql = "INSERT INTO bdComments (name, message, productId)
+    VALUES (?,?,?);";
+
+    $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt,$sql)){
+        echo "Comment could not be posted";
+        exit();
+    }
+    
+    mysqli_stmt_bind_param($stmt,'sss', $name, $message, $productId);
+
+    mysqli_stmt_execute($stmt);
+    echo mysqli_error($conn);
+    mysqli_stmt_close($stmt);
+    
+    echo 'Comment saved successfully';
+}
+
+?>
+
+<!-- Recommended Products -->
+
     <h1 class="pb-3 bakingPackageText">OTHER DESSERTS YOU MAY LIKE</h1>
     <div class="container p-5">
         <div class="row">
@@ -95,6 +136,45 @@
     </div>
         </div>
     </div>
+
+<!-- Recommended Products End -->
+
+
+
+    <!-- Comment Section - Kaia -->
+
+<h1 class="pb-3 pt-5 bakingPackageText">COMMENTS</h1>
+
+<div class="col-lg-5 col-sm-11 mx-auto p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
+    <form action="productDetails.php" method="post" class="form">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Name" >
+        <br>
+        <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+        <br>
+        <button class="btn submitBtn" type="submit" name="post_comment">Post Comment</button>
+    </form>
+</div>
+
+<div class="col-lg-5 col-sm-11 mx-auto p-3">
+<?php 
+
+    $comments = loadComments($conn);
+
+
+    while($row = mysqli_fetch_assoc($comments)){
+?>
+    <div class="postedComments form-control card border-2 mb-5 bg-white rounded">
+        <h6><?php echo $row['name'];?></h6>
+        <p class='message'><?php  echo $row['message'];?></p>
+    </div>
+
+<?php }  ?>
+
+</div>
+
+<!-- Comment Section End -->
+
+
 
 <?php
     include 'Includes/footer.php';

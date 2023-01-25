@@ -1,0 +1,18 @@
+.postedComments{ 
+    text-align: left;
+}
+
+.submitBtn{
+    color: white;
+    font-size: 15px;
+    background-color: #592614;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* left: 35%; */
+}
+
+.submitBtn:hover{
+    background-color: #bc4c35;
+    color: white;
+}

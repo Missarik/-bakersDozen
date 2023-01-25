@@ -92,6 +92,37 @@
         </div>
     </div>
 
+    <h1 class="pb-3 pt-5 bakingPackageText">COMMENTS</h1>
+
+<div class="col-lg-5 col-sm-11 mx-auto p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
+    <form action="productDetails.php" method="post" class="form">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Name" >
+        <br>
+        <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+        <br>
+        <button class="btn submitBtn" type="submit" name="post_comment">Post Comment</button>
+    </form>
+</div>
+
+<div class="col-lg-5 col-sm-11 mx-auto p-3">
+<?php 
+
+    $comments = loadComments($conn);
+
+
+    while($row = mysqli_fetch_assoc($comments)){
+?>
+    <div class="postedComments form-control card border-2 mb-5 bg-white rounded">
+        <h6><?php echo $row['name'];?></h6>
+        <p class='message'><?php  echo $row['message'];?></p>
+    </div>
+
+<?php }  ?>
+
+</div>
+
+<!-- Comment Section End -->
+
 <?php
     include 'Includes/footer.php';
 ?>
