@@ -17,7 +17,7 @@
                         $id = $_GET["id"];
                             $result = loadUtensil($conn, $id);
 
-                            $Material = $result['Material'];
+                            $productType = $result['productType'];
 ?>
 
                     <div class="col-md-4">
@@ -42,7 +42,7 @@
         </div>
     </div>
     <?php 
-                        $data = getRandomUtensil($conn, $Material);
+                        $data = getRandomUtensil($conn, $productType);
                     ?>
 
     <h1 class="pb-3 bakingPackageText">SIMILAR PRODUCTS</h1>
@@ -52,24 +52,24 @@
         while($result = mysqli_fetch_assoc($data)) {
 
             
-            $ProductId = $result["ProductId"];
-            $ProductName = $result["ProductName"];
-            $ProductPrice = $result["ProductPrice"];
-            $Image = $result["Image"];
+            $productId = $result["ProductId"];
+            $productName = $result["ProductName"];
+            $productPrice = $result["ProductPrice"];
+            $image = $result["Image"];
 
 
 
 
             ?>
             <div class="col-sm p-3">
-                <a href="productDetails2.php?id=<?php echo $ProductId; ?>" class="bakingCardContent">
+                <a href="productDetails2.php?id=<?php echo $productId; ?>" class="bakingCardContent">
                     <div class="card border-0">
-                        <img src="Images/utensils/<?php echo $Image; ?>" class="card-img-top cardImageStyling">
+                        <img src="Images/utensils/<?php echo $image; ?>" class="card-img-top cardImageStyling">
                         <a href="../HTML/#.html" class="btn shopNowBaking"><img src="../Images/plus.svg"
                                 class="plusBaking" alt=""></a>
                         <div class="card-body">
-                        <h5 class="card-title"><?php echo $ProductName;?></h5>
-                            <p class="card-text price">€<?php echo $ProductPrice;?></p>
+                        <h5 class="card-title"><?php echo $productName;?></h5>
+                            <p class="card-text price">€<?php echo $productPrice;?></p>
                         </div>
                     </div>
                 </a>
@@ -92,65 +92,10 @@
         </div>
     </div>
 
-<!-- Recommended Products -->
-
-<h1 class="pb-3 bakingPackageText">OTHER DESSERTS YOU MAY LIKE</h1>
-    <div class="container p-5">
-        <div class="row">
-            <?php $counter = 0;
-        while($result = mysqli_fetch_assoc($data)) {
-
-            
-            $ProductId = $result["ProductId"];
-            $ProductName = $result["ProductName"];
-            $ProductPrice = $result["ProductPrice"];
-            $Image = $result["Image"];
-
-
-
-
-            ?>
-            <div class="col-sm p-3">
-                <a href="productDetails2.php?id=<?php echo $ProductId; ?>" class="bakingCardContent">
-                    <div class="card border-0">
-                        <img src="Images/products/<?php echo $Image; ?>" class="card-img-top cardImageStyling">
-                        <a href="../HTML/#.html" class="btn shopNowBaking"><img src="../Images/plus.svg"
-                                class="plusBaking" alt=""></a>
-                        <div class="card-body">
-                        <h5 class="card-title"><?php echo $ProductName;?></h5>
-                            <p class="card-text price">€<?php echo $ProductPrice;?></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <?php
-            $counter++;
-            if($counter == 3){
-?>
-    </div>
-    <div class="row">
-<?php
-                $counter = 0;
-            }
-        }
-    ?>
-
-        </div>
-    </div>
-        </div>
-    </div>
-
-<!-- Recommended Products End -->
-
-
-
-    <!-- Comment Section - Kaia -->
-
-<h1 class="pb-3 pt-5 bakingPackageText">COMMENTS</h1>
+    <h1 class="pb-3 pt-5 bakingPackageText">COMMENTS</h1>
 
 <div class="col-lg-5 col-sm-11 mx-auto p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
-    <form action="productDetails2.php" method="post" class="form">
+    <form action="productDetails.php" method="post" class="form">
         <input type="text" class="form-control" name="name" id="name" placeholder="Name" >
         <br>
         <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
