@@ -16,14 +16,14 @@
         mysqli_stmt_bind_param($stmt, "sssssss", $firstName, $lastName, $dob, $emailAddress, $mobileNumber, $nationality, $hashedPassword);
 
         mysqli_stmt_execute($stmt);
-<<<< HEAD
+
         
         mysqli_stmt_close($stmt);
         
-=======
+
         mysqli_stmt_close($stmt);
 
->>>>>>> 69951782cc9ff0da4f4953755dd58c8d20749c11
+
         header("location:../account.php?error=none");
     }
 
