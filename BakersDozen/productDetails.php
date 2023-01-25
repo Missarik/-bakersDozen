@@ -83,12 +83,12 @@ if (isset($_POST['post_comment'])){
     echo mysqli_error($conn);
     mysqli_stmt_close($stmt);
     
-    echo "Comment saved successfully";    
+    echo 'Comment saved successfully';
 }
 
 ?>
 
-
+<!-- Recommended Products -->
 
     <h1 class="pb-3 bakingPackageText">OTHER DESSERTS YOU MAY LIKE</h1>
     <div class="container p-5">
@@ -137,35 +137,36 @@ if (isset($_POST['post_comment'])){
         </div>
     </div>
 
+<!-- Recommended Products End -->
 
 
-    <!-- Comment Section -->
 
-<h1 class="pb-3 bakingPackageText">COMMENTS</h1>
+    <!-- Comment Section - Kaia -->
+
+<h1 class="pb-3 pt-5 bakingPackageText">COMMENTS</h1>
 
 <div class="col-lg-5 col-sm-11 mx-auto p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
     <form action="productDetails.php" method="post" class="form">
-        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Name" >
         <br>
-        <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
         <br>
-        <button type="submit" class="btn" name="post_comment">Post Comment</button>
+        <button class="btn submitBtn" type="submit" name="post_comment">Post Comment</button>
     </form>
 </div>
 
-<div class="content">
+<div class="col-lg-5 col-sm-11 mx-auto p-3">
 <?php 
 
     $comments = loadComments($conn);
 
-// $result = $conn->query($sql);
 
-// if($result->num_rows > 0) {
     while($row = mysqli_fetch_assoc($comments)){
 ?>
-<h3><?php echo $row['name'];?></h3>
-<p><?php echo $row['message'];?></p>
-
+    <div class="postedComments form-control card border-2 mb-5 bg-white rounded">
+        <h6><?php echo $row['name'];?></h6>
+        <p class='message'><?php  echo $row['message'];?></p>
+    </div>
 
 <?php }  ?>
 
